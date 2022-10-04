@@ -20,7 +20,7 @@
 ;;  Description
 ;;
 ;;; Code:
-(defgroup youtube-sub-extractor nill
+(defgroup youtube-sub-extractor nil
   "YouTube Subtitle Extractor"
   :prefix "youtube-sub-extractor-"
   :group 'applications)
@@ -39,7 +39,7 @@
 
 (defun yt-extract-subs (video-url)
   "For a given YouTube vid VIDEO-URL, extracts subtitles and opens them in a buffer."
-  (interactive "P")
+  (interactive (list (read-string "Enter video URL: ")))
   (unless (executable-find "youtube-dl")
     (error "youtube-dl not found"))
   (let* ((langs (mapconcat 'identity yt-languages ","))
@@ -55,11 +55,20 @@
                              (when (string-match "\\[info\\] Writing video subtitles to: \\(.*\\)" s)
                                (match-string 1 s)))
                            (split-string res "\n")))))
-    (dolist (f fnames)
-      (let ((buf (generate-new-buffer f)))
-        (with-current-buffer buf
-          (insert-file-contents (concat "/tmp/" f)))
-        (display-buffer buf)))))
+    (unless fnames
+      (error (format "Failed to extract subtitles, youtube-dl output:\n\n%s" res)))
+
+    (let* ((subs-file (cond
+                       ((and (< 1 (length fnames))
+                             (or (null yt-languages) (< 1 (length yt-languages))))
+                        (completing-read "Choose subtitle variant" fnames nil :require-match))
+
+                       ((eq 1 (length fnames))
+                        (car fnames))))
+           (buf (generate-new-buffer subs-file)))
+      (with-current-buffer buf
+        (insert-file-contents (concat "/tmp/" subs-file))
+        (switch-to-buffer-other-window buf)))))
 
 ;; (setq yt-languages '("en" "es"))
 
