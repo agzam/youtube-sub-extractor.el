@@ -44,12 +44,6 @@
     (pcase-let ((`(,s ,m ,h) (parse-time-string ts)))
       (+ (* 3600 h) (* 60 m) s))))
 
-;; (defun yt-remove-timestamps ()
-;;   "Flush lines with timestamps in subtitles buffer."
-;;   (interactive)
-;;   (flush-lines
-;;    "^[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\} --> [0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}$"))
-
 (defun yt-create-subs-buffer (subs-file)
   "Reads SUBS-FILE and inserts the content in a buffer."
   (let* ((raw (with-temp-buffer
@@ -84,7 +78,8 @@
     (goto-char (point-min))))
 
 (defun yt-extract-subs (video-url)
-  "For a given YouTube vid VIDEO-URL, extracts subtitles and opens them in a buffer."
+  "For a given YouTube vid VIDEO-URL, extracts subtitles and opens
+them in a buffer."
   (interactive (list (read-string "Enter video URL: ")))
   (unless (executable-find "youtube-dl")
     (error "youtube-dl not found"))
@@ -112,12 +107,6 @@
                         ((eq 1 (length fnames))
                          (car fnames)))))
       (yt-create-subs-buffer (concat "/tmp/" subs-fname)))))
-
-;; (yt-create-subs-buffer "/tmp/How to Get Your Brain to Focus _ Chris Bailey _ TEDxManchester-Hu4Yvq-g7_Y.en.vtt")
-
-;; (setq yt-languages '("en" "es"))
-
-;; (yt-extract-subs "https://www.youtube.com/watch?v=Hu4Yvq-g7_Y")
 
 (provide 'youtube-sub-extractor)
 ;;; yt-sub-extractor.el ends here
