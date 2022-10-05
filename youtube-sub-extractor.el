@@ -9,7 +9,7 @@
 ;; Version: 0.0.1
 ;; Keywords: convenience multimedia
 ;; Homepage: https://github.com/agzam/yt-sub-extractor
-;; Package-Requires: ((emacs "28.1"))
+;; Package-Requires: ((emacs "28.1") (s "1.13"))
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
@@ -20,6 +20,9 @@
 ;;  Description
 ;;
 ;;; Code:
+
+(require 's)
+
 (defgroup youtube-sub-extractor nil
   "YouTube Subtitle Extractor"
   :prefix "youtube-sub-extractor-"
@@ -31,11 +34,54 @@
   :group 'youtube-sub-extractor
   :type 'list)
 
-(defun yt-remove-timestamps ()
-  "Flush lines with timestamps in subtitles buffer."
-  (interactive)
-  (flush-lines
-   "^[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\} --> [0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}$"))
+(defvar yt--sub-regexp
+  "[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}"
+  "regexp used to locate timestamps in subtitles file")
+
+(defun yt--seconds (ts)
+  "Return total number of seconds for given timestamp TS."
+  (when (stringp ts)
+    (pcase-let ((`(,s ,m ,h) (parse-time-string ts)))
+      (+ (* 3600 h) (* 60 m) s))))
+
+;; (defun yt-remove-timestamps ()
+;;   "Flush lines with timestamps in subtitles buffer."
+;;   (interactive)
+;;   (flush-lines
+;;    "^[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\} --> [0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}$"))
+
+(defun yt-create-subs-buffer (subs-file)
+  "Reads SUBS-FILE and inserts the content in a buffer."
+  (let* ((raw (with-temp-buffer
+                (insert-file-contents subs-file)
+                (buffer-string)))
+         (full-ts-rx (concat "^" yt--sub-regexp " --> " yt--sub-regexp "$"))
+         (fst-sub-pos (string-match full-ts-rx raw))
+         ;; split into subtitle segments
+         (subs (seq-remove
+                'string-blank-p
+                (split-string (substring raw fst-sub-pos nil) "\n\n")))
+         ;; make a list where each element is (timestamp & position)
+         (subs-lst (seq-map (lambda (s)
+                              (let* ((ts (when (string-match yt--sub-regexp s)
+                                           (match-string 0 s)))
+                                     (txt (replace-regexp-in-string full-ts-rx "" s)))
+                                (list ts txt))) subs))
+         (buf (generate-new-buffer (file-name-base subs-file))))
+    (with-current-buffer buf
+      (dolist (sub subs-lst)
+        (let* ((pos (point))
+               (_ (insert (cadr sub)))
+               (ovrl (make-overlay (1+ pos) (point) nil t))
+               (ovrl-txt (or (car sub) "")))
+          (overlay-put
+           ovrl 'before-string
+           (propertize ovrl-txt
+                       'display `((margin left-margin) ,ovrl-txt))))))
+    (read-only-mode +1)
+    (switch-to-buffer-other-window buf)
+    (set-window-margins nil 13)
+    (goto-char (point-min))))
 
 (defun yt-extract-subs (video-url)
   "For a given YouTube vid VIDEO-URL, extracts subtitles and opens them in a buffer."
@@ -58,17 +104,16 @@
     (unless fnames
       (error (format "Failed to extract subtitles, youtube-dl output:\n\n%s" res)))
 
-    (let* ((subs-file (cond
-                       ((and (< 1 (length fnames))
-                             (or (null yt-languages) (< 1 (length yt-languages))))
-                        (completing-read "Choose subtitle variant" fnames nil :require-match))
+    (let* ((subs-fname (cond
+                        ((and (< 1 (length fnames))
+                              (or (null yt-languages) (< 1 (length yt-languages))))
+                         (completing-read "Choose subtitle variant" fnames nil :require-match))
 
-                       ((eq 1 (length fnames))
-                        (car fnames))))
-           (buf (generate-new-buffer subs-file)))
-      (with-current-buffer buf
-        (insert-file-contents (concat "/tmp/" subs-file))
-        (switch-to-buffer-other-window buf)))))
+                        ((eq 1 (length fnames))
+                         (car fnames)))))
+      (yt-create-subs-buffer (concat "/tmp/" subs-fname)))))
+
+;; (yt-create-subs-buffer "/tmp/How to Get Your Brain to Focus _ Chris Bailey _ TEDxManchester-Hu4Yvq-g7_Y.en.vtt")
 
 ;; (setq yt-languages '("en" "es"))
 

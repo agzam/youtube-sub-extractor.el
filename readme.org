@@ -3,12 +3,12 @@
 ** Description
 Extracts video subtitles using ~youtube-dl~ and shows them in a buffer.
 
-The other day while talking to my colleague, I couldn't recall the name of a term I heard in a YouTube video, that bothered me. After the conversation, I found the video. I set the playback speed to 2x and went back and forth through it. And still couldn't pinpoint the exact time when the presenter used that term. After a few minutes, I thought: "what the heck am I doing?". I quickly wrote a tiny elisp function to help myself. While reading through the subs I realized how much (useful) stuff went past my ears, I decided to turn this into a package.
+I was having a conversation one day and I couldn't recall the name of a term, something I learned from a YouTube video. That bothered me. After the chat I went back to YouTube, found the video, and started searching through it. I increased the playback speed and went back and forth but still couldn't find it. After a few minutes of that struggle, I thought: "what the heck am I doing?". Then I wrote a tiny elisp function to extract subtitles. While reading through the subs I realized how much good stuff went past my ears (while watching the video).
 
 ** Prerequisites
 It works by calling ~youtube-dl~ command line utility. Make sure it's installed and available at ~$PATH~.
 
 ** Status - experimental
-This tiny package doesn't do much just yet. Well, actually it's not designed to do much. I'm planning to add timestamps to be displayed as overlays, and add a way to jump to the video at the specific timestamp at the point.
+This tiny package doesn't do much just yet. Well, it's not designed to do much. +I'm planning to add timestamps to be displayed as overlays+ (done), and add a way to jump to the video at the specific timestamp at the point.
 
 Theoretically, it should work with other YouTube-like websites, e.g., Vimeo, but I haven't tried.
