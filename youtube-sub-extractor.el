@@ -1,4 +1,4 @@
-;;; yt-sub-extractor.el --- Extract YouTube video subtitles  -*- lexical-binding: t; -*-
+;;; youtube-sub-extractor.el --- Extract YouTube video subtitles  -*- lexical-binding: t; -*-
 ;;
 ;; Copyright (C) 2022 Ag Ibragimov
 ;;
@@ -8,8 +8,8 @@
 ;; Modified: October 02, 2022
 ;; Version: 0.0.1
 ;; Keywords: convenience multimedia
-;; Homepage: https://github.com/agzam/yt-sub-extractor
-;; Package-Requires: ((emacs "28.1") (s "1.13"))
+;; Homepage: https://github.com/agzam/youtube-sub-extractor.el
+;; Package-Requires: ((emacs "28.1"))
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
@@ -20,8 +20,6 @@
 ;;  Description
 ;;
 ;;; Code:
-
-(require 's)
 
 (defgroup youtube-sub-extractor nil
   "YouTube Subtitle Extractor"
@@ -109,7 +107,7 @@ them in a buffer."
       (yt-create-subs-buffer (concat "/tmp/" subs-fname)))))
 
 (provide 'youtube-sub-extractor)
-;;; yt-sub-extractor.el ends here
+;;; youtube-sub-extractor.el ends here
 
 ;; Local Variables:
 ;; read-symbol-shorthands: (("yt-" . "youtube-sub-extractor-"))
