@@ -72,7 +72,7 @@
                        'display `((margin left-margin) ,ovrl-txt))))))
     (read-only-mode +1)
     (switch-to-buffer-other-window buf)
-    (set-window-margins nil 13)
+    (set-window-margins nil 15)
     (goto-char (point-min))))
 
 (defun yt-extract-subs (video-url)
@@ -104,7 +104,9 @@ them in a buffer."
 
                         ((eq 1 (length fnames))
                          (car fnames)))))
-      (yt-create-subs-buffer (concat "/tmp/" subs-fname)))))
+      (yt-create-subs-buffer (concat "/tmp/" subs-fname))
+      (dolist (f fnames)
+        (delete-file (concat "/tmp/" f))))))
 
 (provide 'youtube-sub-extractor)
 ;;; youtube-sub-extractor.el ends here
