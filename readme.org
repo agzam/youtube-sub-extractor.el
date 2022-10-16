@@ -6,7 +6,7 @@ Extracts video subtitles using [[https://github.com/yt-dlp][yt-dlp]] (recommende
 I was having a conversation one day and I couldn't recall the name of a term, something I learned from a YouTube video. That bothered me. After the chat, I went back to YouTube, found the video, and started searching through it. I increased the playback speed and went back and forth but still couldn't find it. After a few minutes of that struggle, I thought: "what the heck am I doing?". Then I wrote a tiny elisp function to extract subtitles. While reading through the subs I realized how much good stuff went past my ears (while watching the video).
 
 ** Prerequisites
-It works by calling ~~yt-dlp~~ (preferred), or  ~youtube-dl~ command line utility. Make sure at least one of them is installed and available at ~$PATH~.
+It works by calling ~yt-dlp~ (preferred), or  ~youtube-dl~ command line utility. Make sure at least one of them is installed and available at ~$PATH~.
 
 *** Why ~yt-dlp~ is a preferred option?
 ~yt-dlp~ is a ~youtube-dl~ fork that adds new features and fixes known bugs. Notably, it knows how to extract auto-generated subtitles, and ~youtube-dl~ does not (there's an outstanding bug that needs [[https://github.com/ytdl-org/youtube-dl/issues/29623][fixing]] - /as of October 2022/).
