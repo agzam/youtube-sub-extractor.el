@@ -14,8 +14,8 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; Commentary:
-;;
-;; This package requires youtube-dl cmd line tool installed and availible in $PATH
+;
+;; This package requires https://github.com/yt-dlp cmd line tool, installed and availible in $PATH
 ;;
 ;;  Description
 ;;
@@ -189,7 +189,7 @@ Each is a timestamp, duration and the corresponding sub."
                                (match-string 1 s)))
                            (split-string res "\n")))))
     (unless fnames
-      (error (format "Failed to extract subtitles, youtube-dl output:\n\n%s" res)))
+      (error (format "Failed to extract subtitles, output log:\n\n%s" res)))
 
     (let* ((subs-fname (cond
                         ((and (< 1 (length fnames))
