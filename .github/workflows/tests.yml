@@ -1,0 +1,38 @@
+name: "Testing youtube-sub-extractor.el"
+on: [push, pull_request]
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        emacs_version:
+          - 27.1
+          - 28.2
+          - snapshot
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install Emacs
+        uses: purcell/setup-emacs@master
+        with:
+            version: ${{ matrix.emacs_version }}
+
+      - name: install buttercup
+        run: |-
+          set -e
+          script=$(cat <<- 'EOF'
+            (progn
+              (require 'package)
+              (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+              (package-initialize)
+              (unless (package-installed-p 'buttercup)
+                (package-refresh-contents)
+                (package-install 'buttercup)))
+          EOF
+          )
+          emacs --batch --eval "$script"
+
+      - name: check
+        run: |-
+         emacs --batch --funcall package-initialize --directory . --funcall buttercup-run-discover
