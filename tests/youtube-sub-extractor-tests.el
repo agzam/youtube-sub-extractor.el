@@ -107,4 +107,45 @@
             '("00:08:43.490 --> 00:08:46.580"
               ("make you better than yesterday")))))
 
+(describe "test -available-langs for when there are available subs"
+  :var (youtube-sub-extractor--send-request)
+  (before-all
+    (setf (symbol-function 'youtube-sub-extractor--send-request)
+          (lambda (video-url args)
+            (expect args :to-equal "--list-subs --no-simulate --skip-download --no-playlist")
+            (expect video-url :to-match "pelicula_prueba")
+            ;; read fixture file instead of sending request
+            (file-to-string "tests/list-subs-output.txt")))
+
+    (spy-on 'youtube-sub-extractor--send-request))
+
+  (it "should return the list of available languages"
+    (expect (youtube-sub-extractor--available-langs "https://www.youtube.com/watch?v=pelicula_prueba")
+            :to-equal
+            '(("ar" "Arabic")
+              ("cs" "Czech")
+              ("en" "English")
+              ("fr" "French")
+              ("iw" "Hebrew")
+              ("id" "Indonesian")
+              ("pt-PT" "Portuguese (Portugal)")
+              ("es" "Spanish")))))
+
+(describe "--available-langs for when no available subs"
+  :var (youtube-sub-extractor--send-request)
+  (before-all
+    (setf (symbol-function 'youtube-sub-extractor--send-request)
+          (lambda (video-url args)
+            (expect args :to-equal "--list-subs --no-simulate --skip-download --no-playlist")
+            (expect video-url :to-match "pelicula_prueba")
+            ;; read fixture file instead of sending request
+            (file-to-string "tests/list-subs-no-available-output.txt")))
+
+    (spy-on 'youtube-sub-extractor--send-request))
+
+  (it "should return nil, since no available languages"
+    (expect (youtube-sub-extractor--available-langs "https://www.youtube.com/watch?v=pelicula_prueba")
+            :to-equal
+            nil)))
+
 ;;; youtube-sub-extractor-tests.el ends here

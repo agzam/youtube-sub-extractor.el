@@ -172,6 +172,31 @@ Each is a timestamp, duration and the corresponding sub."
     (switch-to-buffer-other-window buf)
     (set-window-margins nil 8)))
 
+(defun youtube-sub-extractor--send-request (video-url args)
+  "Call cmd-line util with params."
+  (shell-command-to-string
+   (format
+    "cd /tmp && %s %s \"%s\""
+    (youtube-sub-extractor--find-exe) args video-url)))
+
+(defun youtube-sub-extractor--available-langs (video-url)
+  "Send a request for VIDEO-URL and get list of available languages."
+  (let* ((lan-lst (seq-remove #'null
+                   (seq-map (lambda (x)
+                              (when (string-match "^\\([A-z\\|-]+\\)\\(.*\\)vtt," x)
+                                (list (match-string 1 x)
+                                      (string-trim (match-string 2 x)))))
+                            (seq-drop
+                             (seq-drop-while
+                              (lambda (x)
+                                (not (string-match-p "\\[info\\] Available subtitles for.*:" x)))
+                              (split-string
+                               (youtube-sub-extractor--send-request
+                                video-url
+                                "--list-subs --no-simulate --skip-download --no-playlist")
+                               "\n"  :omit-nulls))
+                             2)))))
+    lan-lst))
 (defun youtube-sub-extractor-extract-subs (video-url)
   "For a given YouTube vid VIDEO-URL, extract subtitles and open them in a buffer."
   (interactive (list (read-string "Enter video URL: ")))

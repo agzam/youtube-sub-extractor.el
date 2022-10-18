@@ -1,0 +1,1150 @@
+[youtube] -3QJke9_Z4o: Downloading webpage
+[youtube] -3QJke9_Z4o: Downloading android player API JSON
+[info] Available automatic captions for -3QJke9_Z4o:
+Language      Name                                             Formats
+af-ar         Afrikaans from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+ak-ar         Akan from Arabic                                 vtt, ttml, srv3, srv2, srv1, json3
+sq-ar         Albanian from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+am-ar         Amharic from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+ar-ar         Arabic from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+hy-ar         Armenian from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+as-ar         Assamese from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+ay-ar         Aymara from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+az-ar         Azerbaijani from Arabic                          vtt, ttml, srv3, srv2, srv1, json3
+bn-ar         Bangla from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+eu-ar         Basque from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+be-ar         Belarusian from Arabic                           vtt, ttml, srv3, srv2, srv1, json3
+bho-ar        Bhojpuri from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+bs-ar         Bosnian from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+bg-ar         Bulgarian from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+my-ar         Burmese from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+ca-ar         Catalan from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+ceb-ar        Cebuano from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-ar    Chinese (Simplified) from Arabic                 vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-ar    Chinese (Traditional) from Arabic                vtt, ttml, srv3, srv2, srv1, json3
+co-ar         Corsican from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+hr-ar         Croatian from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+cs-ar         Czech from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+da-ar         Danish from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+dv-ar         Divehi from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+nl-ar         Dutch from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+en-ar         English from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+eo-ar         Esperanto from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+et-ar         Estonian from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+ee-ar         Ewe from Arabic                                  vtt, ttml, srv3, srv2, srv1, json3
+fil-ar        Filipino from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+fi-ar         Finnish from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+fr-ar         French from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+gl-ar         Galician from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+lg-ar         Ganda from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+ka-ar         Georgian from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+de-ar         German from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+el-ar         Greek from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+gn-ar         Guarani from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+gu-ar         Gujarati from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+ht-ar         Haitian Creole from Arabic                       vtt, ttml, srv3, srv2, srv1, json3
+ha-ar         Hausa from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+haw-ar        Hawaiian from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+iw-ar         Hebrew from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+hi-ar         Hindi from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+hmn-ar        Hmong from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+hu-ar         Hungarian from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+is-ar         Icelandic from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+ig-ar         Igbo from Arabic                                 vtt, ttml, srv3, srv2, srv1, json3
+id-ar         Indonesian from Arabic                           vtt, ttml, srv3, srv2, srv1, json3
+ga-ar         Irish from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+it-ar         Italian from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+ja-ar         Japanese from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+jv-ar         Javanese from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+kn-ar         Kannada from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+kk-ar         Kazakh from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+km-ar         Khmer from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+rw-ar         Kinyarwanda from Arabic                          vtt, ttml, srv3, srv2, srv1, json3
+ko-ar         Korean from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+kri-ar        Krio from Arabic                                 vtt, ttml, srv3, srv2, srv1, json3
+ku-ar         Kurdish from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+ky-ar         Kyrgyz from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+lo-ar         Lao from Arabic                                  vtt, ttml, srv3, srv2, srv1, json3
+la-ar         Latin from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+lv-ar         Latvian from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+ln-ar         Lingala from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+lt-ar         Lithuanian from Arabic                           vtt, ttml, srv3, srv2, srv1, json3
+lb-ar         Luxembourgish from Arabic                        vtt, ttml, srv3, srv2, srv1, json3
+mk-ar         Macedonian from Arabic                           vtt, ttml, srv3, srv2, srv1, json3
+mg-ar         Malagasy from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+ms-ar         Malay from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+ml-ar         Malayalam from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+mt-ar         Maltese from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+mi-ar         Māori from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+mr-ar         Marathi from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+mn-ar         Mongolian from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+ne-ar         Nepali from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+nso-ar        Northern Sotho from Arabic                       vtt, ttml, srv3, srv2, srv1, json3
+no-ar         Norwegian from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+ny-ar         Nyanja from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+or-ar         Odia from Arabic                                 vtt, ttml, srv3, srv2, srv1, json3
+om-ar         Oromo from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+ps-ar         Pashto from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+fa-ar         Persian from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+pl-ar         Polish from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+pt-ar         Portuguese from Arabic                           vtt, ttml, srv3, srv2, srv1, json3
+pa-ar         Punjabi from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+qu-ar         Quechua from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+ro-ar         Romanian from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+ru-ar         Russian from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+sm-ar         Samoan from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+sa-ar         Sanskrit from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+gd-ar         Scottish Gaelic from Arabic                      vtt, ttml, srv3, srv2, srv1, json3
+sr-ar         Serbian from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+sn-ar         Shona from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+sd-ar         Sindhi from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+si-ar         Sinhala from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+sk-ar         Slovak from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+sl-ar         Slovenian from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+so-ar         Somali from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+st-ar         Southern Sotho from Arabic                       vtt, ttml, srv3, srv2, srv1, json3
+es-ar         Spanish from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+su-ar         Sundanese from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+sw-ar         Swahili from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+sv-ar         Swedish from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+tg-ar         Tajik from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+ta-ar         Tamil from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+tt-ar         Tatar from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+te-ar         Telugu from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+th-ar         Thai from Arabic                                 vtt, ttml, srv3, srv2, srv1, json3
+ti-ar         Tigrinya from Arabic                             vtt, ttml, srv3, srv2, srv1, json3
+ts-ar         Tsonga from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+tr-ar         Turkish from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+tk-ar         Turkmen from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+uk-ar         Ukrainian from Arabic                            vtt, ttml, srv3, srv2, srv1, json3
+und-ar        Unknown Language from Arabic                     vtt, ttml, srv3, srv2, srv1, json3
+ur-ar         Urdu from Arabic                                 vtt, ttml, srv3, srv2, srv1, json3
+ug-ar         Uyghur from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+uz-ar         Uzbek from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+vi-ar         Vietnamese from Arabic                           vtt, ttml, srv3, srv2, srv1, json3
+cy-ar         Welsh from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+fy-ar         Western Frisian from Arabic                      vtt, ttml, srv3, srv2, srv1, json3
+xh-ar         Xhosa from Arabic                                vtt, ttml, srv3, srv2, srv1, json3
+yi-ar         Yiddish from Arabic                              vtt, ttml, srv3, srv2, srv1, json3
+yo-ar         Yoruba from Arabic                               vtt, ttml, srv3, srv2, srv1, json3
+zu-ar         Zulu from Arabic                                 vtt, ttml, srv3, srv2, srv1, json3
+af-cs         Afrikaans from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+ak-cs         Akan from Czech                                  vtt, ttml, srv3, srv2, srv1, json3
+sq-cs         Albanian from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+am-cs         Amharic from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+ar-cs         Arabic from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+hy-cs         Armenian from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+as-cs         Assamese from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+ay-cs         Aymara from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+az-cs         Azerbaijani from Czech                           vtt, ttml, srv3, srv2, srv1, json3
+bn-cs         Bangla from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+eu-cs         Basque from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+be-cs         Belarusian from Czech                            vtt, ttml, srv3, srv2, srv1, json3
+bho-cs        Bhojpuri from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+bs-cs         Bosnian from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+bg-cs         Bulgarian from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+my-cs         Burmese from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+ca-cs         Catalan from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+ceb-cs        Cebuano from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-cs    Chinese (Simplified) from Czech                  vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-cs    Chinese (Traditional) from Czech                 vtt, ttml, srv3, srv2, srv1, json3
+co-cs         Corsican from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+hr-cs         Croatian from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+cs-cs         Czech from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+da-cs         Danish from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+dv-cs         Divehi from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+nl-cs         Dutch from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+en-cs         English from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+eo-cs         Esperanto from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+et-cs         Estonian from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+ee-cs         Ewe from Czech                                   vtt, ttml, srv3, srv2, srv1, json3
+fil-cs        Filipino from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+fi-cs         Finnish from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+fr-cs         French from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+gl-cs         Galician from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+lg-cs         Ganda from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+ka-cs         Georgian from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+de-cs         German from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+el-cs         Greek from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+gn-cs         Guarani from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+gu-cs         Gujarati from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+ht-cs         Haitian Creole from Czech                        vtt, ttml, srv3, srv2, srv1, json3
+ha-cs         Hausa from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+haw-cs        Hawaiian from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+iw-cs         Hebrew from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+hi-cs         Hindi from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+hmn-cs        Hmong from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+hu-cs         Hungarian from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+is-cs         Icelandic from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+ig-cs         Igbo from Czech                                  vtt, ttml, srv3, srv2, srv1, json3
+id-cs         Indonesian from Czech                            vtt, ttml, srv3, srv2, srv1, json3
+ga-cs         Irish from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+it-cs         Italian from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+ja-cs         Japanese from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+jv-cs         Javanese from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+kn-cs         Kannada from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+kk-cs         Kazakh from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+km-cs         Khmer from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+rw-cs         Kinyarwanda from Czech                           vtt, ttml, srv3, srv2, srv1, json3
+ko-cs         Korean from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+kri-cs        Krio from Czech                                  vtt, ttml, srv3, srv2, srv1, json3
+ku-cs         Kurdish from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+ky-cs         Kyrgyz from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+lo-cs         Lao from Czech                                   vtt, ttml, srv3, srv2, srv1, json3
+la-cs         Latin from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+lv-cs         Latvian from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+ln-cs         Lingala from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+lt-cs         Lithuanian from Czech                            vtt, ttml, srv3, srv2, srv1, json3
+lb-cs         Luxembourgish from Czech                         vtt, ttml, srv3, srv2, srv1, json3
+mk-cs         Macedonian from Czech                            vtt, ttml, srv3, srv2, srv1, json3
+mg-cs         Malagasy from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+ms-cs         Malay from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+ml-cs         Malayalam from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+mt-cs         Maltese from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+mi-cs         Māori from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+mr-cs         Marathi from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+mn-cs         Mongolian from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+ne-cs         Nepali from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+nso-cs        Northern Sotho from Czech                        vtt, ttml, srv3, srv2, srv1, json3
+no-cs         Norwegian from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+ny-cs         Nyanja from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+or-cs         Odia from Czech                                  vtt, ttml, srv3, srv2, srv1, json3
+om-cs         Oromo from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+ps-cs         Pashto from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+fa-cs         Persian from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+pl-cs         Polish from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+pt-cs         Portuguese from Czech                            vtt, ttml, srv3, srv2, srv1, json3
+pa-cs         Punjabi from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+qu-cs         Quechua from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+ro-cs         Romanian from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+ru-cs         Russian from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+sm-cs         Samoan from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+sa-cs         Sanskrit from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+gd-cs         Scottish Gaelic from Czech                       vtt, ttml, srv3, srv2, srv1, json3
+sr-cs         Serbian from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+sn-cs         Shona from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+sd-cs         Sindhi from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+si-cs         Sinhala from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+sk-cs         Slovak from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+sl-cs         Slovenian from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+so-cs         Somali from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+st-cs         Southern Sotho from Czech                        vtt, ttml, srv3, srv2, srv1, json3
+es-cs         Spanish from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+su-cs         Sundanese from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+sw-cs         Swahili from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+sv-cs         Swedish from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+tg-cs         Tajik from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+ta-cs         Tamil from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+tt-cs         Tatar from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+te-cs         Telugu from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+th-cs         Thai from Czech                                  vtt, ttml, srv3, srv2, srv1, json3
+ti-cs         Tigrinya from Czech                              vtt, ttml, srv3, srv2, srv1, json3
+ts-cs         Tsonga from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+tr-cs         Turkish from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+tk-cs         Turkmen from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+uk-cs         Ukrainian from Czech                             vtt, ttml, srv3, srv2, srv1, json3
+und-cs        Unknown Language from Czech                      vtt, ttml, srv3, srv2, srv1, json3
+ur-cs         Urdu from Czech                                  vtt, ttml, srv3, srv2, srv1, json3
+ug-cs         Uyghur from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+uz-cs         Uzbek from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+vi-cs         Vietnamese from Czech                            vtt, ttml, srv3, srv2, srv1, json3
+cy-cs         Welsh from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+fy-cs         Western Frisian from Czech                       vtt, ttml, srv3, srv2, srv1, json3
+xh-cs         Xhosa from Czech                                 vtt, ttml, srv3, srv2, srv1, json3
+yi-cs         Yiddish from Czech                               vtt, ttml, srv3, srv2, srv1, json3
+yo-cs         Yoruba from Czech                                vtt, ttml, srv3, srv2, srv1, json3
+zu-cs         Zulu from Czech                                  vtt, ttml, srv3, srv2, srv1, json3
+af-en         Afrikaans from English                           vtt, ttml, srv3, srv2, srv1, json3
+ak-en         Akan from English                                vtt, ttml, srv3, srv2, srv1, json3
+sq-en         Albanian from English                            vtt, ttml, srv3, srv2, srv1, json3
+am-en         Amharic from English                             vtt, ttml, srv3, srv2, srv1, json3
+ar-en         Arabic from English                              vtt, ttml, srv3, srv2, srv1, json3
+hy-en         Armenian from English                            vtt, ttml, srv3, srv2, srv1, json3
+as-en         Assamese from English                            vtt, ttml, srv3, srv2, srv1, json3
+ay-en         Aymara from English                              vtt, ttml, srv3, srv2, srv1, json3
+az-en         Azerbaijani from English                         vtt, ttml, srv3, srv2, srv1, json3
+bn-en         Bangla from English                              vtt, ttml, srv3, srv2, srv1, json3
+eu-en         Basque from English                              vtt, ttml, srv3, srv2, srv1, json3
+be-en         Belarusian from English                          vtt, ttml, srv3, srv2, srv1, json3
+bho-en        Bhojpuri from English                            vtt, ttml, srv3, srv2, srv1, json3
+bs-en         Bosnian from English                             vtt, ttml, srv3, srv2, srv1, json3
+bg-en         Bulgarian from English                           vtt, ttml, srv3, srv2, srv1, json3
+my-en         Burmese from English                             vtt, ttml, srv3, srv2, srv1, json3
+ca-en         Catalan from English                             vtt, ttml, srv3, srv2, srv1, json3
+ceb-en        Cebuano from English                             vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-en    Chinese (Simplified) from English                vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-en    Chinese (Traditional) from English               vtt, ttml, srv3, srv2, srv1, json3
+co-en         Corsican from English                            vtt, ttml, srv3, srv2, srv1, json3
+hr-en         Croatian from English                            vtt, ttml, srv3, srv2, srv1, json3
+cs-en         Czech from English                               vtt, ttml, srv3, srv2, srv1, json3
+da-en         Danish from English                              vtt, ttml, srv3, srv2, srv1, json3
+dv-en         Divehi from English                              vtt, ttml, srv3, srv2, srv1, json3
+nl-en         Dutch from English                               vtt, ttml, srv3, srv2, srv1, json3
+en-en         English from English                             vtt, ttml, srv3, srv2, srv1, json3
+eo-en         Esperanto from English                           vtt, ttml, srv3, srv2, srv1, json3
+et-en         Estonian from English                            vtt, ttml, srv3, srv2, srv1, json3
+ee-en         Ewe from English                                 vtt, ttml, srv3, srv2, srv1, json3
+fil-en        Filipino from English                            vtt, ttml, srv3, srv2, srv1, json3
+fi-en         Finnish from English                             vtt, ttml, srv3, srv2, srv1, json3
+fr-en         French from English                              vtt, ttml, srv3, srv2, srv1, json3
+gl-en         Galician from English                            vtt, ttml, srv3, srv2, srv1, json3
+lg-en         Ganda from English                               vtt, ttml, srv3, srv2, srv1, json3
+ka-en         Georgian from English                            vtt, ttml, srv3, srv2, srv1, json3
+de-en         German from English                              vtt, ttml, srv3, srv2, srv1, json3
+el-en         Greek from English                               vtt, ttml, srv3, srv2, srv1, json3
+gn-en         Guarani from English                             vtt, ttml, srv3, srv2, srv1, json3
+gu-en         Gujarati from English                            vtt, ttml, srv3, srv2, srv1, json3
+ht-en         Haitian Creole from English                      vtt, ttml, srv3, srv2, srv1, json3
+ha-en         Hausa from English                               vtt, ttml, srv3, srv2, srv1, json3
+haw-en        Hawaiian from English                            vtt, ttml, srv3, srv2, srv1, json3
+iw-en         Hebrew from English                              vtt, ttml, srv3, srv2, srv1, json3
+hi-en         Hindi from English                               vtt, ttml, srv3, srv2, srv1, json3
+hmn-en        Hmong from English                               vtt, ttml, srv3, srv2, srv1, json3
+hu-en         Hungarian from English                           vtt, ttml, srv3, srv2, srv1, json3
+is-en         Icelandic from English                           vtt, ttml, srv3, srv2, srv1, json3
+ig-en         Igbo from English                                vtt, ttml, srv3, srv2, srv1, json3
+id-en         Indonesian from English                          vtt, ttml, srv3, srv2, srv1, json3
+ga-en         Irish from English                               vtt, ttml, srv3, srv2, srv1, json3
+it-en         Italian from English                             vtt, ttml, srv3, srv2, srv1, json3
+ja-en         Japanese from English                            vtt, ttml, srv3, srv2, srv1, json3
+jv-en         Javanese from English                            vtt, ttml, srv3, srv2, srv1, json3
+kn-en         Kannada from English                             vtt, ttml, srv3, srv2, srv1, json3
+kk-en         Kazakh from English                              vtt, ttml, srv3, srv2, srv1, json3
+km-en         Khmer from English                               vtt, ttml, srv3, srv2, srv1, json3
+rw-en         Kinyarwanda from English                         vtt, ttml, srv3, srv2, srv1, json3
+ko-en         Korean from English                              vtt, ttml, srv3, srv2, srv1, json3
+kri-en        Krio from English                                vtt, ttml, srv3, srv2, srv1, json3
+ku-en         Kurdish from English                             vtt, ttml, srv3, srv2, srv1, json3
+ky-en         Kyrgyz from English                              vtt, ttml, srv3, srv2, srv1, json3
+lo-en         Lao from English                                 vtt, ttml, srv3, srv2, srv1, json3
+la-en         Latin from English                               vtt, ttml, srv3, srv2, srv1, json3
+lv-en         Latvian from English                             vtt, ttml, srv3, srv2, srv1, json3
+ln-en         Lingala from English                             vtt, ttml, srv3, srv2, srv1, json3
+lt-en         Lithuanian from English                          vtt, ttml, srv3, srv2, srv1, json3
+lb-en         Luxembourgish from English                       vtt, ttml, srv3, srv2, srv1, json3
+mk-en         Macedonian from English                          vtt, ttml, srv3, srv2, srv1, json3
+mg-en         Malagasy from English                            vtt, ttml, srv3, srv2, srv1, json3
+ms-en         Malay from English                               vtt, ttml, srv3, srv2, srv1, json3
+ml-en         Malayalam from English                           vtt, ttml, srv3, srv2, srv1, json3
+mt-en         Maltese from English                             vtt, ttml, srv3, srv2, srv1, json3
+mi-en         Māori from English                               vtt, ttml, srv3, srv2, srv1, json3
+mr-en         Marathi from English                             vtt, ttml, srv3, srv2, srv1, json3
+mn-en         Mongolian from English                           vtt, ttml, srv3, srv2, srv1, json3
+ne-en         Nepali from English                              vtt, ttml, srv3, srv2, srv1, json3
+nso-en        Northern Sotho from English                      vtt, ttml, srv3, srv2, srv1, json3
+no-en         Norwegian from English                           vtt, ttml, srv3, srv2, srv1, json3
+ny-en         Nyanja from English                              vtt, ttml, srv3, srv2, srv1, json3
+or-en         Odia from English                                vtt, ttml, srv3, srv2, srv1, json3
+om-en         Oromo from English                               vtt, ttml, srv3, srv2, srv1, json3
+ps-en         Pashto from English                              vtt, ttml, srv3, srv2, srv1, json3
+fa-en         Persian from English                             vtt, ttml, srv3, srv2, srv1, json3
+pl-en         Polish from English                              vtt, ttml, srv3, srv2, srv1, json3
+pt-en         Portuguese from English                          vtt, ttml, srv3, srv2, srv1, json3
+pa-en         Punjabi from English                             vtt, ttml, srv3, srv2, srv1, json3
+qu-en         Quechua from English                             vtt, ttml, srv3, srv2, srv1, json3
+ro-en         Romanian from English                            vtt, ttml, srv3, srv2, srv1, json3
+ru-en         Russian from English                             vtt, ttml, srv3, srv2, srv1, json3
+sm-en         Samoan from English                              vtt, ttml, srv3, srv2, srv1, json3
+sa-en         Sanskrit from English                            vtt, ttml, srv3, srv2, srv1, json3
+gd-en         Scottish Gaelic from English                     vtt, ttml, srv3, srv2, srv1, json3
+sr-en         Serbian from English                             vtt, ttml, srv3, srv2, srv1, json3
+sn-en         Shona from English                               vtt, ttml, srv3, srv2, srv1, json3
+sd-en         Sindhi from English                              vtt, ttml, srv3, srv2, srv1, json3
+si-en         Sinhala from English                             vtt, ttml, srv3, srv2, srv1, json3
+sk-en         Slovak from English                              vtt, ttml, srv3, srv2, srv1, json3
+sl-en         Slovenian from English                           vtt, ttml, srv3, srv2, srv1, json3
+so-en         Somali from English                              vtt, ttml, srv3, srv2, srv1, json3
+st-en         Southern Sotho from English                      vtt, ttml, srv3, srv2, srv1, json3
+es-en         Spanish from English                             vtt, ttml, srv3, srv2, srv1, json3
+su-en         Sundanese from English                           vtt, ttml, srv3, srv2, srv1, json3
+sw-en         Swahili from English                             vtt, ttml, srv3, srv2, srv1, json3
+sv-en         Swedish from English                             vtt, ttml, srv3, srv2, srv1, json3
+tg-en         Tajik from English                               vtt, ttml, srv3, srv2, srv1, json3
+ta-en         Tamil from English                               vtt, ttml, srv3, srv2, srv1, json3
+tt-en         Tatar from English                               vtt, ttml, srv3, srv2, srv1, json3
+te-en         Telugu from English                              vtt, ttml, srv3, srv2, srv1, json3
+th-en         Thai from English                                vtt, ttml, srv3, srv2, srv1, json3
+ti-en         Tigrinya from English                            vtt, ttml, srv3, srv2, srv1, json3
+ts-en         Tsonga from English                              vtt, ttml, srv3, srv2, srv1, json3
+tr-en         Turkish from English                             vtt, ttml, srv3, srv2, srv1, json3
+tk-en         Turkmen from English                             vtt, ttml, srv3, srv2, srv1, json3
+uk-en         Ukrainian from English                           vtt, ttml, srv3, srv2, srv1, json3
+und-en        Unknown Language from English                    vtt, ttml, srv3, srv2, srv1, json3
+ur-en         Urdu from English                                vtt, ttml, srv3, srv2, srv1, json3
+ug-en         Uyghur from English                              vtt, ttml, srv3, srv2, srv1, json3
+uz-en         Uzbek from English                               vtt, ttml, srv3, srv2, srv1, json3
+vi-en         Vietnamese from English                          vtt, ttml, srv3, srv2, srv1, json3
+cy-en         Welsh from English                               vtt, ttml, srv3, srv2, srv1, json3
+fy-en         Western Frisian from English                     vtt, ttml, srv3, srv2, srv1, json3
+xh-en         Xhosa from English                               vtt, ttml, srv3, srv2, srv1, json3
+yi-en         Yiddish from English                             vtt, ttml, srv3, srv2, srv1, json3
+yo-en         Yoruba from English                              vtt, ttml, srv3, srv2, srv1, json3
+zu-en         Zulu from English                                vtt, ttml, srv3, srv2, srv1, json3
+af            Afrikaans                                        vtt, ttml, srv3, srv2, srv1, json3
+ak            Akan                                             vtt, ttml, srv3, srv2, srv1, json3
+sq            Albanian                                         vtt, ttml, srv3, srv2, srv1, json3
+am            Amharic                                          vtt, ttml, srv3, srv2, srv1, json3
+ar            Arabic                                           vtt, ttml, srv3, srv2, srv1, json3
+hy            Armenian                                         vtt, ttml, srv3, srv2, srv1, json3
+as            Assamese                                         vtt, ttml, srv3, srv2, srv1, json3
+ay            Aymara                                           vtt, ttml, srv3, srv2, srv1, json3
+az            Azerbaijani                                      vtt, ttml, srv3, srv2, srv1, json3
+bn            Bangla                                           vtt, ttml, srv3, srv2, srv1, json3
+eu            Basque                                           vtt, ttml, srv3, srv2, srv1, json3
+be            Belarusian                                       vtt, ttml, srv3, srv2, srv1, json3
+bho           Bhojpuri                                         vtt, ttml, srv3, srv2, srv1, json3
+bs            Bosnian                                          vtt, ttml, srv3, srv2, srv1, json3
+bg            Bulgarian                                        vtt, ttml, srv3, srv2, srv1, json3
+my            Burmese                                          vtt, ttml, srv3, srv2, srv1, json3
+ca            Catalan                                          vtt, ttml, srv3, srv2, srv1, json3
+ceb           Cebuano                                          vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans       Chinese (Simplified)                             vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant       Chinese (Traditional)                            vtt, ttml, srv3, srv2, srv1, json3
+co            Corsican                                         vtt, ttml, srv3, srv2, srv1, json3
+hr            Croatian                                         vtt, ttml, srv3, srv2, srv1, json3
+cs            Czech                                            vtt, ttml, srv3, srv2, srv1, json3
+da            Danish                                           vtt, ttml, srv3, srv2, srv1, json3
+dv            Divehi                                           vtt, ttml, srv3, srv2, srv1, json3
+nl            Dutch                                            vtt, ttml, srv3, srv2, srv1, json3
+en-orig       English (Original)                               vtt, ttml, srv3, srv2, srv1, json3
+en            English                                          vtt, ttml, srv3, srv2, srv1, json3
+eo            Esperanto                                        vtt, ttml, srv3, srv2, srv1, json3
+et            Estonian                                         vtt, ttml, srv3, srv2, srv1, json3
+ee            Ewe                                              vtt, ttml, srv3, srv2, srv1, json3
+fil           Filipino                                         vtt, ttml, srv3, srv2, srv1, json3
+fi            Finnish                                          vtt, ttml, srv3, srv2, srv1, json3
+fr            French                                           vtt, ttml, srv3, srv2, srv1, json3
+gl            Galician                                         vtt, ttml, srv3, srv2, srv1, json3
+lg            Ganda                                            vtt, ttml, srv3, srv2, srv1, json3
+ka            Georgian                                         vtt, ttml, srv3, srv2, srv1, json3
+de            German                                           vtt, ttml, srv3, srv2, srv1, json3
+el            Greek                                            vtt, ttml, srv3, srv2, srv1, json3
+gn            Guarani                                          vtt, ttml, srv3, srv2, srv1, json3
+gu            Gujarati                                         vtt, ttml, srv3, srv2, srv1, json3
+ht            Haitian Creole                                   vtt, ttml, srv3, srv2, srv1, json3
+ha            Hausa                                            vtt, ttml, srv3, srv2, srv1, json3
+haw           Hawaiian                                         vtt, ttml, srv3, srv2, srv1, json3
+iw            Hebrew                                           vtt, ttml, srv3, srv2, srv1, json3
+hi            Hindi                                            vtt, ttml, srv3, srv2, srv1, json3
+hmn           Hmong                                            vtt, ttml, srv3, srv2, srv1, json3
+hu            Hungarian                                        vtt, ttml, srv3, srv2, srv1, json3
+is            Icelandic                                        vtt, ttml, srv3, srv2, srv1, json3
+ig            Igbo                                             vtt, ttml, srv3, srv2, srv1, json3
+id            Indonesian                                       vtt, ttml, srv3, srv2, srv1, json3
+ga            Irish                                            vtt, ttml, srv3, srv2, srv1, json3
+it            Italian                                          vtt, ttml, srv3, srv2, srv1, json3
+ja            Japanese                                         vtt, ttml, srv3, srv2, srv1, json3
+jv            Javanese                                         vtt, ttml, srv3, srv2, srv1, json3
+kn            Kannada                                          vtt, ttml, srv3, srv2, srv1, json3
+kk            Kazakh                                           vtt, ttml, srv3, srv2, srv1, json3
+km            Khmer                                            vtt, ttml, srv3, srv2, srv1, json3
+rw            Kinyarwanda                                      vtt, ttml, srv3, srv2, srv1, json3
+ko            Korean                                           vtt, ttml, srv3, srv2, srv1, json3
+kri           Krio                                             vtt, ttml, srv3, srv2, srv1, json3
+ku            Kurdish                                          vtt, ttml, srv3, srv2, srv1, json3
+ky            Kyrgyz                                           vtt, ttml, srv3, srv2, srv1, json3
+lo            Lao                                              vtt, ttml, srv3, srv2, srv1, json3
+la            Latin                                            vtt, ttml, srv3, srv2, srv1, json3
+lv            Latvian                                          vtt, ttml, srv3, srv2, srv1, json3
+ln            Lingala                                          vtt, ttml, srv3, srv2, srv1, json3
+lt            Lithuanian                                       vtt, ttml, srv3, srv2, srv1, json3
+lb            Luxembourgish                                    vtt, ttml, srv3, srv2, srv1, json3
+mk            Macedonian                                       vtt, ttml, srv3, srv2, srv1, json3
+mg            Malagasy                                         vtt, ttml, srv3, srv2, srv1, json3
+ms            Malay                                            vtt, ttml, srv3, srv2, srv1, json3
+ml            Malayalam                                        vtt, ttml, srv3, srv2, srv1, json3
+mt            Maltese                                          vtt, ttml, srv3, srv2, srv1, json3
+mi            Māori                                            vtt, ttml, srv3, srv2, srv1, json3
+mr            Marathi                                          vtt, ttml, srv3, srv2, srv1, json3
+mn            Mongolian                                        vtt, ttml, srv3, srv2, srv1, json3
+ne            Nepali                                           vtt, ttml, srv3, srv2, srv1, json3
+nso           Northern Sotho                                   vtt, ttml, srv3, srv2, srv1, json3
+no            Norwegian                                        vtt, ttml, srv3, srv2, srv1, json3
+ny            Nyanja                                           vtt, ttml, srv3, srv2, srv1, json3
+or            Odia                                             vtt, ttml, srv3, srv2, srv1, json3
+om            Oromo                                            vtt, ttml, srv3, srv2, srv1, json3
+ps            Pashto                                           vtt, ttml, srv3, srv2, srv1, json3
+fa            Persian                                          vtt, ttml, srv3, srv2, srv1, json3
+pl            Polish                                           vtt, ttml, srv3, srv2, srv1, json3
+pt            Portuguese                                       vtt, ttml, srv3, srv2, srv1, json3
+pa            Punjabi                                          vtt, ttml, srv3, srv2, srv1, json3
+qu            Quechua                                          vtt, ttml, srv3, srv2, srv1, json3
+ro            Romanian                                         vtt, ttml, srv3, srv2, srv1, json3
+ru            Russian                                          vtt, ttml, srv3, srv2, srv1, json3
+sm            Samoan                                           vtt, ttml, srv3, srv2, srv1, json3
+sa            Sanskrit                                         vtt, ttml, srv3, srv2, srv1, json3
+gd            Scottish Gaelic                                  vtt, ttml, srv3, srv2, srv1, json3
+sr            Serbian                                          vtt, ttml, srv3, srv2, srv1, json3
+sn            Shona                                            vtt, ttml, srv3, srv2, srv1, json3
+sd            Sindhi                                           vtt, ttml, srv3, srv2, srv1, json3
+si            Sinhala                                          vtt, ttml, srv3, srv2, srv1, json3
+sk            Slovak                                           vtt, ttml, srv3, srv2, srv1, json3
+sl            Slovenian                                        vtt, ttml, srv3, srv2, srv1, json3
+so            Somali                                           vtt, ttml, srv3, srv2, srv1, json3
+st            Southern Sotho                                   vtt, ttml, srv3, srv2, srv1, json3
+es            Spanish                                          vtt, ttml, srv3, srv2, srv1, json3
+su            Sundanese                                        vtt, ttml, srv3, srv2, srv1, json3
+sw            Swahili                                          vtt, ttml, srv3, srv2, srv1, json3
+sv            Swedish                                          vtt, ttml, srv3, srv2, srv1, json3
+tg            Tajik                                            vtt, ttml, srv3, srv2, srv1, json3
+ta            Tamil                                            vtt, ttml, srv3, srv2, srv1, json3
+tt            Tatar                                            vtt, ttml, srv3, srv2, srv1, json3
+te            Telugu                                           vtt, ttml, srv3, srv2, srv1, json3
+th            Thai                                             vtt, ttml, srv3, srv2, srv1, json3
+ti            Tigrinya                                         vtt, ttml, srv3, srv2, srv1, json3
+ts            Tsonga                                           vtt, ttml, srv3, srv2, srv1, json3
+tr            Turkish                                          vtt, ttml, srv3, srv2, srv1, json3
+tk            Turkmen                                          vtt, ttml, srv3, srv2, srv1, json3
+uk            Ukrainian                                        vtt, ttml, srv3, srv2, srv1, json3
+und           Unknown Language                                 vtt, ttml, srv3, srv2, srv1, json3
+ur            Urdu                                             vtt, ttml, srv3, srv2, srv1, json3
+ug            Uyghur                                           vtt, ttml, srv3, srv2, srv1, json3
+uz            Uzbek                                            vtt, ttml, srv3, srv2, srv1, json3
+vi            Vietnamese                                       vtt, ttml, srv3, srv2, srv1, json3
+cy            Welsh                                            vtt, ttml, srv3, srv2, srv1, json3
+fy            Western Frisian                                  vtt, ttml, srv3, srv2, srv1, json3
+xh            Xhosa                                            vtt, ttml, srv3, srv2, srv1, json3
+yi            Yiddish                                          vtt, ttml, srv3, srv2, srv1, json3
+yo            Yoruba                                           vtt, ttml, srv3, srv2, srv1, json3
+zu            Zulu                                             vtt, ttml, srv3, srv2, srv1, json3
+af-fr         Afrikaans from French                            vtt, ttml, srv3, srv2, srv1, json3
+ak-fr         Akan from French                                 vtt, ttml, srv3, srv2, srv1, json3
+sq-fr         Albanian from French                             vtt, ttml, srv3, srv2, srv1, json3
+am-fr         Amharic from French                              vtt, ttml, srv3, srv2, srv1, json3
+ar-fr         Arabic from French                               vtt, ttml, srv3, srv2, srv1, json3
+hy-fr         Armenian from French                             vtt, ttml, srv3, srv2, srv1, json3
+as-fr         Assamese from French                             vtt, ttml, srv3, srv2, srv1, json3
+ay-fr         Aymara from French                               vtt, ttml, srv3, srv2, srv1, json3
+az-fr         Azerbaijani from French                          vtt, ttml, srv3, srv2, srv1, json3
+bn-fr         Bangla from French                               vtt, ttml, srv3, srv2, srv1, json3
+eu-fr         Basque from French                               vtt, ttml, srv3, srv2, srv1, json3
+be-fr         Belarusian from French                           vtt, ttml, srv3, srv2, srv1, json3
+bho-fr        Bhojpuri from French                             vtt, ttml, srv3, srv2, srv1, json3
+bs-fr         Bosnian from French                              vtt, ttml, srv3, srv2, srv1, json3
+bg-fr         Bulgarian from French                            vtt, ttml, srv3, srv2, srv1, json3
+my-fr         Burmese from French                              vtt, ttml, srv3, srv2, srv1, json3
+ca-fr         Catalan from French                              vtt, ttml, srv3, srv2, srv1, json3
+ceb-fr        Cebuano from French                              vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-fr    Chinese (Simplified) from French                 vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-fr    Chinese (Traditional) from French                vtt, ttml, srv3, srv2, srv1, json3
+co-fr         Corsican from French                             vtt, ttml, srv3, srv2, srv1, json3
+hr-fr         Croatian from French                             vtt, ttml, srv3, srv2, srv1, json3
+cs-fr         Czech from French                                vtt, ttml, srv3, srv2, srv1, json3
+da-fr         Danish from French                               vtt, ttml, srv3, srv2, srv1, json3
+dv-fr         Divehi from French                               vtt, ttml, srv3, srv2, srv1, json3
+nl-fr         Dutch from French                                vtt, ttml, srv3, srv2, srv1, json3
+en-fr         English from French                              vtt, ttml, srv3, srv2, srv1, json3
+eo-fr         Esperanto from French                            vtt, ttml, srv3, srv2, srv1, json3
+et-fr         Estonian from French                             vtt, ttml, srv3, srv2, srv1, json3
+ee-fr         Ewe from French                                  vtt, ttml, srv3, srv2, srv1, json3
+fil-fr        Filipino from French                             vtt, ttml, srv3, srv2, srv1, json3
+fi-fr         Finnish from French                              vtt, ttml, srv3, srv2, srv1, json3
+fr-fr         French from French                               vtt, ttml, srv3, srv2, srv1, json3
+gl-fr         Galician from French                             vtt, ttml, srv3, srv2, srv1, json3
+lg-fr         Ganda from French                                vtt, ttml, srv3, srv2, srv1, json3
+ka-fr         Georgian from French                             vtt, ttml, srv3, srv2, srv1, json3
+de-fr         German from French                               vtt, ttml, srv3, srv2, srv1, json3
+el-fr         Greek from French                                vtt, ttml, srv3, srv2, srv1, json3
+gn-fr         Guarani from French                              vtt, ttml, srv3, srv2, srv1, json3
+gu-fr         Gujarati from French                             vtt, ttml, srv3, srv2, srv1, json3
+ht-fr         Haitian Creole from French                       vtt, ttml, srv3, srv2, srv1, json3
+ha-fr         Hausa from French                                vtt, ttml, srv3, srv2, srv1, json3
+haw-fr        Hawaiian from French                             vtt, ttml, srv3, srv2, srv1, json3
+iw-fr         Hebrew from French                               vtt, ttml, srv3, srv2, srv1, json3
+hi-fr         Hindi from French                                vtt, ttml, srv3, srv2, srv1, json3
+hmn-fr        Hmong from French                                vtt, ttml, srv3, srv2, srv1, json3
+hu-fr         Hungarian from French                            vtt, ttml, srv3, srv2, srv1, json3
+is-fr         Icelandic from French                            vtt, ttml, srv3, srv2, srv1, json3
+ig-fr         Igbo from French                                 vtt, ttml, srv3, srv2, srv1, json3
+id-fr         Indonesian from French                           vtt, ttml, srv3, srv2, srv1, json3
+ga-fr         Irish from French                                vtt, ttml, srv3, srv2, srv1, json3
+it-fr         Italian from French                              vtt, ttml, srv3, srv2, srv1, json3
+ja-fr         Japanese from French                             vtt, ttml, srv3, srv2, srv1, json3
+jv-fr         Javanese from French                             vtt, ttml, srv3, srv2, srv1, json3
+kn-fr         Kannada from French                              vtt, ttml, srv3, srv2, srv1, json3
+kk-fr         Kazakh from French                               vtt, ttml, srv3, srv2, srv1, json3
+km-fr         Khmer from French                                vtt, ttml, srv3, srv2, srv1, json3
+rw-fr         Kinyarwanda from French                          vtt, ttml, srv3, srv2, srv1, json3
+ko-fr         Korean from French                               vtt, ttml, srv3, srv2, srv1, json3
+kri-fr        Krio from French                                 vtt, ttml, srv3, srv2, srv1, json3
+ku-fr         Kurdish from French                              vtt, ttml, srv3, srv2, srv1, json3
+ky-fr         Kyrgyz from French                               vtt, ttml, srv3, srv2, srv1, json3
+lo-fr         Lao from French                                  vtt, ttml, srv3, srv2, srv1, json3
+la-fr         Latin from French                                vtt, ttml, srv3, srv2, srv1, json3
+lv-fr         Latvian from French                              vtt, ttml, srv3, srv2, srv1, json3
+ln-fr         Lingala from French                              vtt, ttml, srv3, srv2, srv1, json3
+lt-fr         Lithuanian from French                           vtt, ttml, srv3, srv2, srv1, json3
+lb-fr         Luxembourgish from French                        vtt, ttml, srv3, srv2, srv1, json3
+mk-fr         Macedonian from French                           vtt, ttml, srv3, srv2, srv1, json3
+mg-fr         Malagasy from French                             vtt, ttml, srv3, srv2, srv1, json3
+ms-fr         Malay from French                                vtt, ttml, srv3, srv2, srv1, json3
+ml-fr         Malayalam from French                            vtt, ttml, srv3, srv2, srv1, json3
+mt-fr         Maltese from French                              vtt, ttml, srv3, srv2, srv1, json3
+mi-fr         Māori from French                                vtt, ttml, srv3, srv2, srv1, json3
+mr-fr         Marathi from French                              vtt, ttml, srv3, srv2, srv1, json3
+mn-fr         Mongolian from French                            vtt, ttml, srv3, srv2, srv1, json3
+ne-fr         Nepali from French                               vtt, ttml, srv3, srv2, srv1, json3
+nso-fr        Northern Sotho from French                       vtt, ttml, srv3, srv2, srv1, json3
+no-fr         Norwegian from French                            vtt, ttml, srv3, srv2, srv1, json3
+ny-fr         Nyanja from French                               vtt, ttml, srv3, srv2, srv1, json3
+or-fr         Odia from French                                 vtt, ttml, srv3, srv2, srv1, json3
+om-fr         Oromo from French                                vtt, ttml, srv3, srv2, srv1, json3
+ps-fr         Pashto from French                               vtt, ttml, srv3, srv2, srv1, json3
+fa-fr         Persian from French                              vtt, ttml, srv3, srv2, srv1, json3
+pl-fr         Polish from French                               vtt, ttml, srv3, srv2, srv1, json3
+pt-fr         Portuguese from French                           vtt, ttml, srv3, srv2, srv1, json3
+pa-fr         Punjabi from French                              vtt, ttml, srv3, srv2, srv1, json3
+qu-fr         Quechua from French                              vtt, ttml, srv3, srv2, srv1, json3
+ro-fr         Romanian from French                             vtt, ttml, srv3, srv2, srv1, json3
+ru-fr         Russian from French                              vtt, ttml, srv3, srv2, srv1, json3
+sm-fr         Samoan from French                               vtt, ttml, srv3, srv2, srv1, json3
+sa-fr         Sanskrit from French                             vtt, ttml, srv3, srv2, srv1, json3
+gd-fr         Scottish Gaelic from French                      vtt, ttml, srv3, srv2, srv1, json3
+sr-fr         Serbian from French                              vtt, ttml, srv3, srv2, srv1, json3
+sn-fr         Shona from French                                vtt, ttml, srv3, srv2, srv1, json3
+sd-fr         Sindhi from French                               vtt, ttml, srv3, srv2, srv1, json3
+si-fr         Sinhala from French                              vtt, ttml, srv3, srv2, srv1, json3
+sk-fr         Slovak from French                               vtt, ttml, srv3, srv2, srv1, json3
+sl-fr         Slovenian from French                            vtt, ttml, srv3, srv2, srv1, json3
+so-fr         Somali from French                               vtt, ttml, srv3, srv2, srv1, json3
+st-fr         Southern Sotho from French                       vtt, ttml, srv3, srv2, srv1, json3
+es-fr         Spanish from French                              vtt, ttml, srv3, srv2, srv1, json3
+su-fr         Sundanese from French                            vtt, ttml, srv3, srv2, srv1, json3
+sw-fr         Swahili from French                              vtt, ttml, srv3, srv2, srv1, json3
+sv-fr         Swedish from French                              vtt, ttml, srv3, srv2, srv1, json3
+tg-fr         Tajik from French                                vtt, ttml, srv3, srv2, srv1, json3
+ta-fr         Tamil from French                                vtt, ttml, srv3, srv2, srv1, json3
+tt-fr         Tatar from French                                vtt, ttml, srv3, srv2, srv1, json3
+te-fr         Telugu from French                               vtt, ttml, srv3, srv2, srv1, json3
+th-fr         Thai from French                                 vtt, ttml, srv3, srv2, srv1, json3
+ti-fr         Tigrinya from French                             vtt, ttml, srv3, srv2, srv1, json3
+ts-fr         Tsonga from French                               vtt, ttml, srv3, srv2, srv1, json3
+tr-fr         Turkish from French                              vtt, ttml, srv3, srv2, srv1, json3
+tk-fr         Turkmen from French                              vtt, ttml, srv3, srv2, srv1, json3
+uk-fr         Ukrainian from French                            vtt, ttml, srv3, srv2, srv1, json3
+und-fr        Unknown Language from French                     vtt, ttml, srv3, srv2, srv1, json3
+ur-fr         Urdu from French                                 vtt, ttml, srv3, srv2, srv1, json3
+ug-fr         Uyghur from French                               vtt, ttml, srv3, srv2, srv1, json3
+uz-fr         Uzbek from French                                vtt, ttml, srv3, srv2, srv1, json3
+vi-fr         Vietnamese from French                           vtt, ttml, srv3, srv2, srv1, json3
+cy-fr         Welsh from French                                vtt, ttml, srv3, srv2, srv1, json3
+fy-fr         Western Frisian from French                      vtt, ttml, srv3, srv2, srv1, json3
+xh-fr         Xhosa from French                                vtt, ttml, srv3, srv2, srv1, json3
+yi-fr         Yiddish from French                              vtt, ttml, srv3, srv2, srv1, json3
+yo-fr         Yoruba from French                               vtt, ttml, srv3, srv2, srv1, json3
+zu-fr         Zulu from French                                 vtt, ttml, srv3, srv2, srv1, json3
+af-iw         Afrikaans from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+ak-iw         Akan from Hebrew                                 vtt, ttml, srv3, srv2, srv1, json3
+sq-iw         Albanian from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+am-iw         Amharic from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+ar-iw         Arabic from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+hy-iw         Armenian from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+as-iw         Assamese from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+ay-iw         Aymara from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+az-iw         Azerbaijani from Hebrew                          vtt, ttml, srv3, srv2, srv1, json3
+bn-iw         Bangla from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+eu-iw         Basque from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+be-iw         Belarusian from Hebrew                           vtt, ttml, srv3, srv2, srv1, json3
+bho-iw        Bhojpuri from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+bs-iw         Bosnian from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+bg-iw         Bulgarian from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+my-iw         Burmese from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+ca-iw         Catalan from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+ceb-iw        Cebuano from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-iw    Chinese (Simplified) from Hebrew                 vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-iw    Chinese (Traditional) from Hebrew                vtt, ttml, srv3, srv2, srv1, json3
+co-iw         Corsican from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+hr-iw         Croatian from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+cs-iw         Czech from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+da-iw         Danish from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+dv-iw         Divehi from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+nl-iw         Dutch from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+en-iw         English from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+eo-iw         Esperanto from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+et-iw         Estonian from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+ee-iw         Ewe from Hebrew                                  vtt, ttml, srv3, srv2, srv1, json3
+fil-iw        Filipino from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+fi-iw         Finnish from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+fr-iw         French from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+gl-iw         Galician from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+lg-iw         Ganda from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+ka-iw         Georgian from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+de-iw         German from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+el-iw         Greek from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+gn-iw         Guarani from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+gu-iw         Gujarati from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+ht-iw         Haitian Creole from Hebrew                       vtt, ttml, srv3, srv2, srv1, json3
+ha-iw         Hausa from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+haw-iw        Hawaiian from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+iw-iw         Hebrew from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+hi-iw         Hindi from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+hmn-iw        Hmong from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+hu-iw         Hungarian from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+is-iw         Icelandic from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+ig-iw         Igbo from Hebrew                                 vtt, ttml, srv3, srv2, srv1, json3
+id-iw         Indonesian from Hebrew                           vtt, ttml, srv3, srv2, srv1, json3
+ga-iw         Irish from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+it-iw         Italian from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+ja-iw         Japanese from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+jv-iw         Javanese from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+kn-iw         Kannada from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+kk-iw         Kazakh from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+km-iw         Khmer from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+rw-iw         Kinyarwanda from Hebrew                          vtt, ttml, srv3, srv2, srv1, json3
+ko-iw         Korean from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+kri-iw        Krio from Hebrew                                 vtt, ttml, srv3, srv2, srv1, json3
+ku-iw         Kurdish from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+ky-iw         Kyrgyz from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+lo-iw         Lao from Hebrew                                  vtt, ttml, srv3, srv2, srv1, json3
+la-iw         Latin from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+lv-iw         Latvian from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+ln-iw         Lingala from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+lt-iw         Lithuanian from Hebrew                           vtt, ttml, srv3, srv2, srv1, json3
+lb-iw         Luxembourgish from Hebrew                        vtt, ttml, srv3, srv2, srv1, json3
+mk-iw         Macedonian from Hebrew                           vtt, ttml, srv3, srv2, srv1, json3
+mg-iw         Malagasy from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+ms-iw         Malay from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+ml-iw         Malayalam from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+mt-iw         Maltese from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+mi-iw         Māori from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+mr-iw         Marathi from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+mn-iw         Mongolian from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+ne-iw         Nepali from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+nso-iw        Northern Sotho from Hebrew                       vtt, ttml, srv3, srv2, srv1, json3
+no-iw         Norwegian from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+ny-iw         Nyanja from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+or-iw         Odia from Hebrew                                 vtt, ttml, srv3, srv2, srv1, json3
+om-iw         Oromo from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+ps-iw         Pashto from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+fa-iw         Persian from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+pl-iw         Polish from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+pt-iw         Portuguese from Hebrew                           vtt, ttml, srv3, srv2, srv1, json3
+pa-iw         Punjabi from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+qu-iw         Quechua from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+ro-iw         Romanian from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+ru-iw         Russian from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+sm-iw         Samoan from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+sa-iw         Sanskrit from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+gd-iw         Scottish Gaelic from Hebrew                      vtt, ttml, srv3, srv2, srv1, json3
+sr-iw         Serbian from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+sn-iw         Shona from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+sd-iw         Sindhi from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+si-iw         Sinhala from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+sk-iw         Slovak from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+sl-iw         Slovenian from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+so-iw         Somali from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+st-iw         Southern Sotho from Hebrew                       vtt, ttml, srv3, srv2, srv1, json3
+es-iw         Spanish from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+su-iw         Sundanese from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+sw-iw         Swahili from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+sv-iw         Swedish from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+tg-iw         Tajik from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+ta-iw         Tamil from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+tt-iw         Tatar from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+te-iw         Telugu from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+th-iw         Thai from Hebrew                                 vtt, ttml, srv3, srv2, srv1, json3
+ti-iw         Tigrinya from Hebrew                             vtt, ttml, srv3, srv2, srv1, json3
+ts-iw         Tsonga from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+tr-iw         Turkish from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+tk-iw         Turkmen from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+uk-iw         Ukrainian from Hebrew                            vtt, ttml, srv3, srv2, srv1, json3
+und-iw        Unknown Language from Hebrew                     vtt, ttml, srv3, srv2, srv1, json3
+ur-iw         Urdu from Hebrew                                 vtt, ttml, srv3, srv2, srv1, json3
+ug-iw         Uyghur from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+uz-iw         Uzbek from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+vi-iw         Vietnamese from Hebrew                           vtt, ttml, srv3, srv2, srv1, json3
+cy-iw         Welsh from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+fy-iw         Western Frisian from Hebrew                      vtt, ttml, srv3, srv2, srv1, json3
+xh-iw         Xhosa from Hebrew                                vtt, ttml, srv3, srv2, srv1, json3
+yi-iw         Yiddish from Hebrew                              vtt, ttml, srv3, srv2, srv1, json3
+yo-iw         Yoruba from Hebrew                               vtt, ttml, srv3, srv2, srv1, json3
+zu-iw         Zulu from Hebrew                                 vtt, ttml, srv3, srv2, srv1, json3
+af-id         Afrikaans from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+ak-id         Akan from Indonesian                             vtt, ttml, srv3, srv2, srv1, json3
+sq-id         Albanian from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+am-id         Amharic from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+ar-id         Arabic from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+hy-id         Armenian from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+as-id         Assamese from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+ay-id         Aymara from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+az-id         Azerbaijani from Indonesian                      vtt, ttml, srv3, srv2, srv1, json3
+bn-id         Bangla from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+eu-id         Basque from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+be-id         Belarusian from Indonesian                       vtt, ttml, srv3, srv2, srv1, json3
+bho-id        Bhojpuri from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+bs-id         Bosnian from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+bg-id         Bulgarian from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+my-id         Burmese from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+ca-id         Catalan from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+ceb-id        Cebuano from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-id    Chinese (Simplified) from Indonesian             vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-id    Chinese (Traditional) from Indonesian            vtt, ttml, srv3, srv2, srv1, json3
+co-id         Corsican from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+hr-id         Croatian from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+cs-id         Czech from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+da-id         Danish from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+dv-id         Divehi from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+nl-id         Dutch from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+en-id         English from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+eo-id         Esperanto from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+et-id         Estonian from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+ee-id         Ewe from Indonesian                              vtt, ttml, srv3, srv2, srv1, json3
+fil-id        Filipino from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+fi-id         Finnish from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+fr-id         French from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+gl-id         Galician from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+lg-id         Ganda from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+ka-id         Georgian from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+de-id         German from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+el-id         Greek from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+gn-id         Guarani from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+gu-id         Gujarati from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+ht-id         Haitian Creole from Indonesian                   vtt, ttml, srv3, srv2, srv1, json3
+ha-id         Hausa from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+haw-id        Hawaiian from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+iw-id         Hebrew from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+hi-id         Hindi from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+hmn-id        Hmong from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+hu-id         Hungarian from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+is-id         Icelandic from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+ig-id         Igbo from Indonesian                             vtt, ttml, srv3, srv2, srv1, json3
+id-id         Indonesian from Indonesian                       vtt, ttml, srv3, srv2, srv1, json3
+ga-id         Irish from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+it-id         Italian from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+ja-id         Japanese from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+jv-id         Javanese from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+kn-id         Kannada from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+kk-id         Kazakh from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+km-id         Khmer from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+rw-id         Kinyarwanda from Indonesian                      vtt, ttml, srv3, srv2, srv1, json3
+ko-id         Korean from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+kri-id        Krio from Indonesian                             vtt, ttml, srv3, srv2, srv1, json3
+ku-id         Kurdish from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+ky-id         Kyrgyz from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+lo-id         Lao from Indonesian                              vtt, ttml, srv3, srv2, srv1, json3
+la-id         Latin from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+lv-id         Latvian from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+ln-id         Lingala from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+lt-id         Lithuanian from Indonesian                       vtt, ttml, srv3, srv2, srv1, json3
+lb-id         Luxembourgish from Indonesian                    vtt, ttml, srv3, srv2, srv1, json3
+mk-id         Macedonian from Indonesian                       vtt, ttml, srv3, srv2, srv1, json3
+mg-id         Malagasy from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+ms-id         Malay from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+ml-id         Malayalam from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+mt-id         Maltese from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+mi-id         Māori from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+mr-id         Marathi from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+mn-id         Mongolian from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+ne-id         Nepali from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+nso-id        Northern Sotho from Indonesian                   vtt, ttml, srv3, srv2, srv1, json3
+no-id         Norwegian from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+ny-id         Nyanja from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+or-id         Odia from Indonesian                             vtt, ttml, srv3, srv2, srv1, json3
+om-id         Oromo from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+ps-id         Pashto from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+fa-id         Persian from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+pl-id         Polish from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+pt-id         Portuguese from Indonesian                       vtt, ttml, srv3, srv2, srv1, json3
+pa-id         Punjabi from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+qu-id         Quechua from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+ro-id         Romanian from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+ru-id         Russian from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+sm-id         Samoan from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+sa-id         Sanskrit from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+gd-id         Scottish Gaelic from Indonesian                  vtt, ttml, srv3, srv2, srv1, json3
+sr-id         Serbian from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+sn-id         Shona from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+sd-id         Sindhi from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+si-id         Sinhala from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+sk-id         Slovak from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+sl-id         Slovenian from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+so-id         Somali from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+st-id         Southern Sotho from Indonesian                   vtt, ttml, srv3, srv2, srv1, json3
+es-id         Spanish from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+su-id         Sundanese from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+sw-id         Swahili from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+sv-id         Swedish from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+tg-id         Tajik from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+ta-id         Tamil from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+tt-id         Tatar from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+te-id         Telugu from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+th-id         Thai from Indonesian                             vtt, ttml, srv3, srv2, srv1, json3
+ti-id         Tigrinya from Indonesian                         vtt, ttml, srv3, srv2, srv1, json3
+ts-id         Tsonga from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+tr-id         Turkish from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+tk-id         Turkmen from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+uk-id         Ukrainian from Indonesian                        vtt, ttml, srv3, srv2, srv1, json3
+und-id        Unknown Language from Indonesian                 vtt, ttml, srv3, srv2, srv1, json3
+ur-id         Urdu from Indonesian                             vtt, ttml, srv3, srv2, srv1, json3
+ug-id         Uyghur from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+uz-id         Uzbek from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+vi-id         Vietnamese from Indonesian                       vtt, ttml, srv3, srv2, srv1, json3
+cy-id         Welsh from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+fy-id         Western Frisian from Indonesian                  vtt, ttml, srv3, srv2, srv1, json3
+xh-id         Xhosa from Indonesian                            vtt, ttml, srv3, srv2, srv1, json3
+yi-id         Yiddish from Indonesian                          vtt, ttml, srv3, srv2, srv1, json3
+yo-id         Yoruba from Indonesian                           vtt, ttml, srv3, srv2, srv1, json3
+zu-id         Zulu from Indonesian                             vtt, ttml, srv3, srv2, srv1, json3
+af-pt-PT      Afrikaans from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+ak-pt-PT      Akan from Portuguese (Portugal)                  vtt, ttml, srv3, srv2, srv1, json3
+sq-pt-PT      Albanian from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+am-pt-PT      Amharic from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+ar-pt-PT      Arabic from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+hy-pt-PT      Armenian from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+as-pt-PT      Assamese from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+ay-pt-PT      Aymara from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+az-pt-PT      Azerbaijani from Portuguese (Portugal)           vtt, ttml, srv3, srv2, srv1, json3
+bn-pt-PT      Bangla from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+eu-pt-PT      Basque from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+be-pt-PT      Belarusian from Portuguese (Portugal)            vtt, ttml, srv3, srv2, srv1, json3
+bho-pt-PT     Bhojpuri from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+bs-pt-PT      Bosnian from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+bg-pt-PT      Bulgarian from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+my-pt-PT      Burmese from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+ca-pt-PT      Catalan from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+ceb-pt-PT     Cebuano from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-pt-PT Chinese (Simplified) from Portuguese (Portugal)  vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-pt-PT Chinese (Traditional) from Portuguese (Portugal) vtt, ttml, srv3, srv2, srv1, json3
+co-pt-PT      Corsican from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+hr-pt-PT      Croatian from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+cs-pt-PT      Czech from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+da-pt-PT      Danish from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+dv-pt-PT      Divehi from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+nl-pt-PT      Dutch from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+en-pt-PT      English from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+eo-pt-PT      Esperanto from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+et-pt-PT      Estonian from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+ee-pt-PT      Ewe from Portuguese (Portugal)                   vtt, ttml, srv3, srv2, srv1, json3
+fil-pt-PT     Filipino from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+fi-pt-PT      Finnish from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+fr-pt-PT      French from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+gl-pt-PT      Galician from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+lg-pt-PT      Ganda from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+ka-pt-PT      Georgian from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+de-pt-PT      German from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+el-pt-PT      Greek from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+gn-pt-PT      Guarani from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+gu-pt-PT      Gujarati from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+ht-pt-PT      Haitian Creole from Portuguese (Portugal)        vtt, ttml, srv3, srv2, srv1, json3
+ha-pt-PT      Hausa from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+haw-pt-PT     Hawaiian from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+iw-pt-PT      Hebrew from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+hi-pt-PT      Hindi from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+hmn-pt-PT     Hmong from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+hu-pt-PT      Hungarian from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+is-pt-PT      Icelandic from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+ig-pt-PT      Igbo from Portuguese (Portugal)                  vtt, ttml, srv3, srv2, srv1, json3
+id-pt-PT      Indonesian from Portuguese (Portugal)            vtt, ttml, srv3, srv2, srv1, json3
+ga-pt-PT      Irish from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+it-pt-PT      Italian from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+ja-pt-PT      Japanese from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+jv-pt-PT      Javanese from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+kn-pt-PT      Kannada from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+kk-pt-PT      Kazakh from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+km-pt-PT      Khmer from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+rw-pt-PT      Kinyarwanda from Portuguese (Portugal)           vtt, ttml, srv3, srv2, srv1, json3
+ko-pt-PT      Korean from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+kri-pt-PT     Krio from Portuguese (Portugal)                  vtt, ttml, srv3, srv2, srv1, json3
+ku-pt-PT      Kurdish from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+ky-pt-PT      Kyrgyz from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+lo-pt-PT      Lao from Portuguese (Portugal)                   vtt, ttml, srv3, srv2, srv1, json3
+la-pt-PT      Latin from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+lv-pt-PT      Latvian from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+ln-pt-PT      Lingala from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+lt-pt-PT      Lithuanian from Portuguese (Portugal)            vtt, ttml, srv3, srv2, srv1, json3
+lb-pt-PT      Luxembourgish from Portuguese (Portugal)         vtt, ttml, srv3, srv2, srv1, json3
+mk-pt-PT      Macedonian from Portuguese (Portugal)            vtt, ttml, srv3, srv2, srv1, json3
+mg-pt-PT      Malagasy from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+ms-pt-PT      Malay from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+ml-pt-PT      Malayalam from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+mt-pt-PT      Maltese from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+mi-pt-PT      Māori from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+mr-pt-PT      Marathi from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+mn-pt-PT      Mongolian from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+ne-pt-PT      Nepali from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+nso-pt-PT     Northern Sotho from Portuguese (Portugal)        vtt, ttml, srv3, srv2, srv1, json3
+no-pt-PT      Norwegian from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+ny-pt-PT      Nyanja from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+or-pt-PT      Odia from Portuguese (Portugal)                  vtt, ttml, srv3, srv2, srv1, json3
+om-pt-PT      Oromo from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+ps-pt-PT      Pashto from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+fa-pt-PT      Persian from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+pl-pt-PT      Polish from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+pt-pt-PT      Portuguese from Portuguese (Portugal)            vtt, ttml, srv3, srv2, srv1, json3
+pa-pt-PT      Punjabi from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+qu-pt-PT      Quechua from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+ro-pt-PT      Romanian from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+ru-pt-PT      Russian from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+sm-pt-PT      Samoan from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+sa-pt-PT      Sanskrit from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+gd-pt-PT      Scottish Gaelic from Portuguese (Portugal)       vtt, ttml, srv3, srv2, srv1, json3
+sr-pt-PT      Serbian from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+sn-pt-PT      Shona from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+sd-pt-PT      Sindhi from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+si-pt-PT      Sinhala from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+sk-pt-PT      Slovak from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+sl-pt-PT      Slovenian from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+so-pt-PT      Somali from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+st-pt-PT      Southern Sotho from Portuguese (Portugal)        vtt, ttml, srv3, srv2, srv1, json3
+es-pt-PT      Spanish from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+su-pt-PT      Sundanese from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+sw-pt-PT      Swahili from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+sv-pt-PT      Swedish from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+tg-pt-PT      Tajik from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+ta-pt-PT      Tamil from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+tt-pt-PT      Tatar from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+te-pt-PT      Telugu from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+th-pt-PT      Thai from Portuguese (Portugal)                  vtt, ttml, srv3, srv2, srv1, json3
+ti-pt-PT      Tigrinya from Portuguese (Portugal)              vtt, ttml, srv3, srv2, srv1, json3
+ts-pt-PT      Tsonga from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+tr-pt-PT      Turkish from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+tk-pt-PT      Turkmen from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+uk-pt-PT      Ukrainian from Portuguese (Portugal)             vtt, ttml, srv3, srv2, srv1, json3
+und-pt-PT     Unknown Language from Portuguese (Portugal)      vtt, ttml, srv3, srv2, srv1, json3
+ur-pt-PT      Urdu from Portuguese (Portugal)                  vtt, ttml, srv3, srv2, srv1, json3
+ug-pt-PT      Uyghur from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+uz-pt-PT      Uzbek from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+vi-pt-PT      Vietnamese from Portuguese (Portugal)            vtt, ttml, srv3, srv2, srv1, json3
+cy-pt-PT      Welsh from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+fy-pt-PT      Western Frisian from Portuguese (Portugal)       vtt, ttml, srv3, srv2, srv1, json3
+xh-pt-PT      Xhosa from Portuguese (Portugal)                 vtt, ttml, srv3, srv2, srv1, json3
+yi-pt-PT      Yiddish from Portuguese (Portugal)               vtt, ttml, srv3, srv2, srv1, json3
+yo-pt-PT      Yoruba from Portuguese (Portugal)                vtt, ttml, srv3, srv2, srv1, json3
+zu-pt-PT      Zulu from Portuguese (Portugal)                  vtt, ttml, srv3, srv2, srv1, json3
+af-es         Afrikaans from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+ak-es         Akan from Spanish                                vtt, ttml, srv3, srv2, srv1, json3
+sq-es         Albanian from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+am-es         Amharic from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+ar-es         Arabic from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+hy-es         Armenian from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+as-es         Assamese from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+ay-es         Aymara from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+az-es         Azerbaijani from Spanish                         vtt, ttml, srv3, srv2, srv1, json3
+bn-es         Bangla from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+eu-es         Basque from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+be-es         Belarusian from Spanish                          vtt, ttml, srv3, srv2, srv1, json3
+bho-es        Bhojpuri from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+bs-es         Bosnian from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+bg-es         Bulgarian from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+my-es         Burmese from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+ca-es         Catalan from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+ceb-es        Cebuano from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+zh-Hans-es    Chinese (Simplified) from Spanish                vtt, ttml, srv3, srv2, srv1, json3
+zh-Hant-es    Chinese (Traditional) from Spanish               vtt, ttml, srv3, srv2, srv1, json3
+co-es         Corsican from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+hr-es         Croatian from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+cs-es         Czech from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+da-es         Danish from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+dv-es         Divehi from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+nl-es         Dutch from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+en-es         English from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+eo-es         Esperanto from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+et-es         Estonian from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+ee-es         Ewe from Spanish                                 vtt, ttml, srv3, srv2, srv1, json3
+fil-es        Filipino from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+fi-es         Finnish from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+fr-es         French from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+gl-es         Galician from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+lg-es         Ganda from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+ka-es         Georgian from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+de-es         German from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+el-es         Greek from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+gn-es         Guarani from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+gu-es         Gujarati from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+ht-es         Haitian Creole from Spanish                      vtt, ttml, srv3, srv2, srv1, json3
+ha-es         Hausa from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+haw-es        Hawaiian from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+iw-es         Hebrew from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+hi-es         Hindi from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+hmn-es        Hmong from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+hu-es         Hungarian from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+is-es         Icelandic from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+ig-es         Igbo from Spanish                                vtt, ttml, srv3, srv2, srv1, json3
+id-es         Indonesian from Spanish                          vtt, ttml, srv3, srv2, srv1, json3
+ga-es         Irish from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+it-es         Italian from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+ja-es         Japanese from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+jv-es         Javanese from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+kn-es         Kannada from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+kk-es         Kazakh from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+km-es         Khmer from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+rw-es         Kinyarwanda from Spanish                         vtt, ttml, srv3, srv2, srv1, json3
+ko-es         Korean from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+kri-es        Krio from Spanish                                vtt, ttml, srv3, srv2, srv1, json3
+ku-es         Kurdish from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+ky-es         Kyrgyz from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+lo-es         Lao from Spanish                                 vtt, ttml, srv3, srv2, srv1, json3
+la-es         Latin from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+lv-es         Latvian from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+ln-es         Lingala from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+lt-es         Lithuanian from Spanish                          vtt, ttml, srv3, srv2, srv1, json3
+lb-es         Luxembourgish from Spanish                       vtt, ttml, srv3, srv2, srv1, json3
+mk-es         Macedonian from Spanish                          vtt, ttml, srv3, srv2, srv1, json3
+mg-es         Malagasy from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+ms-es         Malay from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+ml-es         Malayalam from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+mt-es         Maltese from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+mi-es         Māori from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+mr-es         Marathi from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+mn-es         Mongolian from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+ne-es         Nepali from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+nso-es        Northern Sotho from Spanish                      vtt, ttml, srv3, srv2, srv1, json3
+no-es         Norwegian from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+ny-es         Nyanja from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+or-es         Odia from Spanish                                vtt, ttml, srv3, srv2, srv1, json3
+om-es         Oromo from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+ps-es         Pashto from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+fa-es         Persian from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+pl-es         Polish from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+pt-es         Portuguese from Spanish                          vtt, ttml, srv3, srv2, srv1, json3
+pa-es         Punjabi from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+qu-es         Quechua from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+ro-es         Romanian from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+ru-es         Russian from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+sm-es         Samoan from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+sa-es         Sanskrit from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+gd-es         Scottish Gaelic from Spanish                     vtt, ttml, srv3, srv2, srv1, json3
+sr-es         Serbian from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+sn-es         Shona from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+sd-es         Sindhi from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+si-es         Sinhala from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+sk-es         Slovak from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+sl-es         Slovenian from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+so-es         Somali from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+st-es         Southern Sotho from Spanish                      vtt, ttml, srv3, srv2, srv1, json3
+es-es         Spanish from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+su-es         Sundanese from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+sw-es         Swahili from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+sv-es         Swedish from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+tg-es         Tajik from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+ta-es         Tamil from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+tt-es         Tatar from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+te-es         Telugu from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+th-es         Thai from Spanish                                vtt, ttml, srv3, srv2, srv1, json3
+ti-es         Tigrinya from Spanish                            vtt, ttml, srv3, srv2, srv1, json3
+ts-es         Tsonga from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+tr-es         Turkish from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+tk-es         Turkmen from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+uk-es         Ukrainian from Spanish                           vtt, ttml, srv3, srv2, srv1, json3
+und-es        Unknown Language from Spanish                    vtt, ttml, srv3, srv2, srv1, json3
+ur-es         Urdu from Spanish                                vtt, ttml, srv3, srv2, srv1, json3
+ug-es         Uyghur from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+uz-es         Uzbek from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+vi-es         Vietnamese from Spanish                          vtt, ttml, srv3, srv2, srv1, json3
+cy-es         Welsh from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+fy-es         Western Frisian from Spanish                     vtt, ttml, srv3, srv2, srv1, json3
+xh-es         Xhosa from Spanish                               vtt, ttml, srv3, srv2, srv1, json3
+yi-es         Yiddish from Spanish                             vtt, ttml, srv3, srv2, srv1, json3
+yo-es         Yoruba from Spanish                              vtt, ttml, srv3, srv2, srv1, json3
+zu-es         Zulu from Spanish                                vtt, ttml, srv3, srv2, srv1, json3
+[info] Available subtitles for -3QJke9_Z4o:
+Language Name                  Formats
+ar       Arabic                vtt, ttml, srv3, srv2, srv1, json3
+cs       Czech                 vtt, ttml, srv3, srv2, srv1, json3
+en       English               vtt, ttml, srv3, srv2, srv1, json3
+fr       French                vtt, ttml, srv3, srv2, srv1, json3
+iw       Hebrew                vtt, ttml, srv3, srv2, srv1, json3
+id       Indonesian            vtt, ttml, srv3, srv2, srv1, json3
+pt-PT    Portuguese (Portugal) vtt, ttml, srv3, srv2, srv1, json3
+es       Spanish               vtt, ttml, srv3, srv2, srv1, json3
+[info] -3QJke9_Z4o: Downloading 1 format(s): 22
