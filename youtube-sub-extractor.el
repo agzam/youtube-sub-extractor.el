@@ -85,7 +85,7 @@ i.e., string containing '00:00:07.200 --> 00:00:09.830'"
 (defun youtube-sub-extractor--process-subs (subs-string)
   "Take single SUBS-STRING and return list of tuples.
 Each is a timestamp, duration and the corresponding sub."
-  (let* ((ts-line-rx (format "^%1$s --> %1$s .*$" youtube-sub-extractor--ts-rx))
+  (let* ((ts-line-rx (format "^%1$s --> %1$s\\( .*$\\|$\\)" youtube-sub-extractor--ts-rx))
          ;; let's remove all cue and decoration tags
          (tags-n-karaoke-rx "<.>\\|<\\/.>\\|\\(<[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}>\\)")
          ;; first we simply parse things and gather into a list of tuples
@@ -111,7 +111,7 @@ Each is a timestamp, duration and the corresponding sub."
                     (list (replace-regexp-in-string tags-n-karaoke-rx "" nxt))))))
 
                 (t acc))))
-           (split-string subs-string "\n" :omit-nulls "^ *$")
+           (split-string subs-string "\n" :omit-nulls " *")
            ()))
          ;; group subs by chunks of the size of `youtube-sub-extractor-min-chunk-size',
          ;; otherwise it splits them into pieces too small. Also, need to take care of
@@ -164,8 +164,7 @@ Each is a timestamp, duration and the corresponding sub."
                (_ (insert (format "%s\n" (string-join (nth 1 el) " "))))
                (ovrl (make-overlay (1+ pos) (point) nil t))
                (ovrl-txt (or ts "")))
-          (overlay-put
-           ovrl 'before-string
+          (overlay-put ovrl 'before-string
            (propertize ovrl-txt
                        'display `((margin left-margin) ,ovrl-txt)))))
       (goto-char (point-min))
