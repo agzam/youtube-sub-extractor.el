@@ -187,6 +187,7 @@ Each is a timestamp, duration and the corresponding sub."
 
 (defun youtube-sub-extractor--send-request (video-url args)
   "Call cmd-line util with params."
+  (message (format "sending request %s \"%s\"" args video-url))
   (shell-command-to-string
    (format
     "cd /tmp && %s %s \"%s\""
@@ -216,7 +217,7 @@ Each is a timestamp, duration and the corresponding sub."
   (interactive (list (read-string "Enter video URL: ")))
   (let* ((langs (youtube-sub-extractor--available-langs video-url))
          (selected (cond
-                    ((null langs) "auto")
+                    ((null langs) 'auto)
 
                     ((and (stringp youtube-sub-extractor-language-choice)
                           (seq-contains-p
@@ -229,17 +230,17 @@ Each is a timestamp, duration and the corresponding sub."
          (res (youtube-sub-extractor--send-request
                video-url
                (format "--skip-download --no-playlist %s"
-                       (if (equal "auto" selected)
+                       (if (equal 'auto selected)
                            "--write-auto-subs"
                          (format "--write-subs --sub-langs \"%s\"" selected)))))
          (progress (seq-drop-while (lambda (x)
-                                     (not (string-match-p "^\\[download\\] Destination.*$" x)))
-                                   (split-string res "\n")))
-         (fname (when (seq-some (lambda (x) (string-match-p "^\\[download\\] 100%.*" x))
+                                     (not (string-match-p "\\[download\\] Destination.*$" x)))
+                                   (split-string res "\n" :omit-nulls "^ \\| $")))
+         (fname (when (seq-some (lambda (x) (string-match-p "\\[download\\] 100% .*" x))
                        progress)
                   (seq-some
                    (lambda (x)
-                     (when (string-match "\\[download\\] Destination: \\(.*\\)$" x)
+                     (when (string-match "\\[download\\] Destination: \\(.*\\)" x)
                        (match-string 1 x)))
                    progress)))
          (fpath (concat "/tmp/" fname)))

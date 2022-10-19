@@ -12,3 +12,21 @@ It works by calling ~yt-dlp~ (preferred), or  ~youtube-dl~ command line utility.
 ~yt-dlp~ is a ~youtube-dl~ fork that adds new features and fixes known bugs. Notably, it knows how to extract auto-generated subtitles, and ~youtube-dl~ does not (there's an outstanding bug that needs [[https://github.com/ytdl-org/youtube-dl/issues/29623][fixing]] - /as of October 2022/).
 
 Without the option of extracting auto-generated subtitles, this package would be useless for the majority of videos on YouTube.
+
+*Update*: Initially, it was written with the support of ~youtube-dl~, but lately, I've been using it exclusively with ~yt-dlp~. There are minor differences between these two tools, and the proper work with ~youtube-dl~ at this point is not guaranteed.
+
+** Installation
+The package is not published on MELPA (just yet). You can install it using your favorite Emacs package management tool.
+
+*** for Doom:
+
+packages.el
+#+begin_src emacs-lisp
+(package! youtube-sub-extractor :recipe (:host github :repo "agzam/youtube-sub-extractor.el" :files ("*.el")))
+#+end_src
+
+config.el
+#+begin_src emacs-lisp
+(use-package! youtube-sub-extractor
+  :commands (youtube-sub-extractor-extract-subs))
+#+end_src
