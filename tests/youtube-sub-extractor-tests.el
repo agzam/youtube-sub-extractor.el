@@ -34,7 +34,7 @@
               ("in his life.")))
     (expect (nth 2 parsed) :to-equal
             '("00:00:14.090 --> 00:00:18.820"
-             ("Sometimes he wants to start exercising and" "get into shape, other times he wants to read")))
+              ("Sometimes he wants to start exercising and" "get into shape, other times he wants to read")))
     (expect (nth 10 parsed) :to-equal
             '("00:00:52.450 --> 00:00:58.210"
               ("This keeps on happening until his desired" "new habit is nearly forgotten.")))
@@ -73,7 +73,7 @@
               ("mejor que ayer.")))
     (expect (nth (1- (length parsed)) parsed) :to-equal
             '("00:08:43.770 --> 00:08:45.430"
-               ("mejor que ayer.")))
+              ("mejor que ayer.")))
     (expect (nth (- (length parsed) 2) parsed) :to-equal
             '("00:08:39.839 --> 00:08:43.770"
               ("Y asegúrate de estar suscrito para no perderte más videos que te harán")))))
@@ -102,7 +102,7 @@
               ("[Music]")))
     (expect (nth (1- (length parsed)) parsed) :to-equal
             '("00:08:46.580 --> 00:09:04.830"
-               ("[Music]")))
+              ("[Music]")))
     (expect (nth (- (length parsed) 2) parsed) :to-equal
             '("00:08:43.490 --> 00:08:46.580"
               ("make you better than yesterday")))))
@@ -147,5 +147,52 @@
     (expect (youtube-sub-extractor--available-langs "https://www.youtube.com/watch?v=pelicula_prueba")
             :to-equal
             nil)))
+
+(describe "youtube-sub-extractor-language-choice test"
+  :var (youtube-sub-extractor--available-langs
+        youtube-sub-extractor--send-request
+        completing-read
+        youtube-sub-extractor--create-subs-buffer)
+
+  (before-each
+    (spy-on 'youtube-sub-extractor--available-langs
+            :and-return-value
+            '(("ar" "Arabic")
+              ("cs" "Czech")
+              ("en" "English")
+              ("fr" "French")
+              ("iw" "Hebrew")
+              ("id" "Indonesian")
+              ("pt-PT" "Portuguese (Portugal)")
+              ("es" "Spanish"))))
+
+  (it "should prompt when language-choice is t"
+    (setq youtube-sub-extractor-language-choice t)
+    (setq vid-url "https://www.youtube.com/watch?v=pelicula_prueba")
+    (spy-on 'completing-read :and-return-value "en")
+
+    (spy-on 'youtube-sub-extractor--send-request
+            :and-return-value
+            "
+[youtube] -3QJke9_Z4o: Downloading webpage
+[youtube] -3QJke9_Z4o: Downloading android player API JSON
+[info] -3QJke9_Z4o: Downloading subtitles: en
+[info] -3QJke9_Z4o: Downloading 1 format(s): 22
+[info] Writing video subtitles to: Break Your Mental Resistance With The 2 Minute Rule (animated) [-3QJke9_Z4o].en.vtt
+[download] Destination: Break Your Mental Resistance With The 2 Minute Rule (animated) [-3QJke9_Z4o].en.vtt
+[download] 100% of   10.79KiB in 00:00:00 at 228.46KiB/s
+"
+            )
+    (spy-on 'youtube-sub-extractor--create-subs-buffer)
+
+    (youtube-sub-extractor-extract-subs vid-url)
+
+    (expect 'youtube-sub-extractor--available-langs :to-have-been-called)
+    (expect 'completing-read :to-have-been-called)
+    (expect 'youtube-sub-extractor--send-request :to-have-been-called-with vid-url "--skip-download --no-playlist --write-subs --sub-langs \"en\"")
+    (expect 'youtube-sub-extractor--create-subs-buffer
+            :to-have-been-called-with
+            "/tmp/Break Your Mental Resistance With The 2 Minute Rule (animated) [-3QJke9_Z4o].en.vtt")))
+
 
 ;;; youtube-sub-extractor-tests.el ends here

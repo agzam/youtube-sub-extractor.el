@@ -9,7 +9,7 @@
 ;; Version: 0.0.1
 ;; Keywords: convenience multimedia
 ;; Homepage: https://github.com/agzam/youtube-sub-extractor.el
-;; Package-Requires: ((emacs "27"))
+;; Package-Requires: ((emacs "27.1"))
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
@@ -26,12 +26,6 @@
   :prefix "youtube-sub-extractor-"
   :group 'applications)
 
-(defcustom youtube-sub-extractor-languages
-  '("en")
-  "Languages of subtitles to extract. If nil - extracts all available."
-  :group 'youtube-sub-extractor
-  :type 'list)
-
 (defcustom youtube-sub-extractor-executable-path
   nil
   "Path to yt-dlp (preferred) or youtube-dl executable."
@@ -43,6 +37,25 @@
   "Minimum number of seconds between subs."
   :group 'youtube-sub-extractor
   :type 'number)
+
+(defcustom youtube-sub-extractor-language-choice
+  t
+  "Whether to prompt to choose the language when multiple subtitle
+options are available. If nil or t - will ask. If set to specific
+language string, e.g.,
+
+\"en\" - for English,
+\"es\" - Spanish,
+\"ar\" - Arabic,
+\"pt-PT\" - Portuguese (Portugal),
+\"pt-BR\" - Portuguese (Brazil), etc.
+
+then it will not ask and quietly download subtitles for the
+specified language (if available). When there are no subtitles
+for the selected language, will download auto-generated English
+ones."
+  :group 'youtube-sub-extractor
+  :type '(choice boolean string))
 
 (defvar youtube-sub-extractor--ts-rx
   "[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}"
@@ -197,35 +210,44 @@ Each is a timestamp, duration and the corresponding sub."
                                "\n"  :omit-nulls))
                              2)))))
     lan-lst))
+
 (defun youtube-sub-extractor-extract-subs (video-url)
   "For a given YouTube vid VIDEO-URL, extract subtitles and open them in a buffer."
   (interactive (list (read-string "Enter video URL: ")))
-  (let* ((langs (mapconcat 'identity youtube-sub-extractor-languages ","))
-         (args (format "--write-auto-subs --write-subs --sub-langs \"%s\" --skip-download" (or langs "all")))
-         (res (shell-command-to-string
-               (format
-                "cd /tmp && %s %s \"%s\""
-                (youtube-sub-extractor--find-exe) args video-url)))
-         (fnames (seq-remove
-                  'null
-                  (seq-map (lambda (s)
-                             (when (string-match "\\[info\\] Writing video subtitles to: \\(.*\\)" s)
-                               (match-string 1 s)))
-                           (split-string res "\n")))))
-    (unless fnames
+  (let* ((langs (youtube-sub-extractor--available-langs video-url))
+         (selected (cond
+                    ((null langs) "auto")
+
+                    ((and (stringp youtube-sub-extractor-language-choice)
+                          (seq-contains-p
+                           (seq-map 'car langs)
+                           youtube-sub-extractor-language-choice
+                           #'string-equal))
+                     youtube-sub-extractor-language-choice)
+
+                    (t (completing-read "Choose the language: " langs nil t))))
+         (res (youtube-sub-extractor--send-request
+               video-url
+               (format "--skip-download --no-playlist %s"
+                       (if (equal "auto" selected)
+                           "--write-auto-subs"
+                         (format "--write-subs --sub-langs \"%s\"" selected)))))
+         (progress (seq-drop-while (lambda (x)
+                                     (not (string-match-p "^\\[download\\] Destination.*$" x)))
+                                   (split-string res "\n")))
+         (fname (when (seq-some (lambda (x) (string-match-p "^\\[download\\] 100%.*" x))
+                       progress)
+                  (seq-some
+                   (lambda (x)
+                     (when (string-match "\\[download\\] Destination: \\(.*\\)$" x)
+                       (match-string 1 x)))
+                   progress)))
+         (fpath (concat "/tmp/" fname)))
+    (unless fname
       (error (format "Failed to extract subtitles, output log:\n\n%s" res)))
 
-    (let* ((subs-fname (cond
-                        ((and (< 1 (length fnames))
-                              (or (null youtube-sub-extractor-languages)
-                                  (< 1 (length youtube-sub-extractor-languages))))
-                         (completing-read "Choose subtitle variant" fnames nil :require-match))
-
-                        ((eq 1 (length fnames))
-                         (car fnames)))))
-      (youtube-sub-extractor--create-subs-buffer (concat "/tmp/" subs-fname))
-      (dolist (f fnames)
-        (delete-file (concat "/tmp/" f))))))
+    (youtube-sub-extractor--create-subs-buffer fpath)
+    (delete-file fpath)))
 
 (provide 'youtube-sub-extractor)
 ;;; youtube-sub-extractor.el ends here
