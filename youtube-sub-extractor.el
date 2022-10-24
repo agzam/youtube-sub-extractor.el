@@ -11,15 +11,19 @@
 ;; Homepage: https://github.com/agzam/youtube-sub-extractor.el
 ;; Package-Requires: ((emacs "27.1"))
 ;;
+;; SPDX-License-Identifier: GPL-3.0-or-later
+;;
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; Commentary:
 ;
+;; Extract video subtitles using https://github.com/yt-dlp and show them in a buffer.
+;;
 ;; This package requires https://github.com/yt-dlp cmd line tool, installed and availible in $PATH
 ;;
-;;  Description
-;;
 ;;; Code:
+
+(require 'cl-lib)
 
 (defgroup youtube-sub-extractor nil
   "YouTube Subtitle Extractor."
@@ -40,9 +44,8 @@
 
 (defcustom youtube-sub-extractor-language-choice
   t
-  "Whether to prompt to choose the language when multiple subtitle
-options are available. If nil or t - will ask. If set to specific
-language string, e.g.,
+  "Whether to prompt for the language when multiple are available.
+If nil or t - will ask. If set to specific language string, e.g.,
 
 \"en\" - for English,
 \"es\" - Spanish,
@@ -186,12 +189,14 @@ Each is a timestamp, duration and the corresponding sub."
     (set-window-margins nil 8)))
 
 (defun youtube-sub-extractor--send-request (video-url args)
-  "Call cmd-line util with params."
-  (message (format "sending request %s \"%s\"" args video-url))
+  "Call cmd-line util with ARGS and VIDEO-URL."
+  (message "sending request %s \"%s\"" args video-url)
   (shell-command-to-string
-   (format
-    "cd /tmp && %s %s \"%s\""
-    (youtube-sub-extractor--find-exe) args video-url)))
+   (shell-quote-argument
+    (format
+     "cd %s && %s %s \"%s\""
+     (temporary-file-directory)
+     (youtube-sub-extractor--find-exe) args video-url))))
 
 (defun youtube-sub-extractor--available-langs (video-url)
   "Send a request for VIDEO-URL and get list of available languages."
@@ -221,7 +226,7 @@ Each is a timestamp, duration and the corresponding sub."
 
                     ((and (stringp youtube-sub-extractor-language-choice)
                           (seq-contains-p
-                           (seq-map 'car langs)
+                           (seq-map #'car langs)
                            youtube-sub-extractor-language-choice
                            #'string-equal))
                      youtube-sub-extractor-language-choice)
@@ -243,9 +248,9 @@ Each is a timestamp, duration and the corresponding sub."
                      (when (string-match "\\[download\\] Destination: \\(.*\\)" x)
                        (match-string 1 x)))
                    progress)))
-         (fpath (concat "/tmp/" fname)))
+         (fpath (concat (temporary-file-directory) fname)))
     (unless fname
-      (error (format "Failed to extract subtitles, output log:\n\n%s" res)))
+      (error "Failed to extract subtitles, output log:\n\n%s" res))
 
     (youtube-sub-extractor--create-subs-buffer fpath)
     (delete-file fpath)))
