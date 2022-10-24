@@ -192,11 +192,12 @@ Each is a timestamp, duration and the corresponding sub."
   "Call cmd-line util with ARGS and VIDEO-URL."
   (message "sending request %s \"%s\"" args video-url)
   (shell-command-to-string
-   (shell-quote-argument
-    (format
-     "cd %s && %s %s \"%s\""
-     (temporary-file-directory)
-     (youtube-sub-extractor--find-exe) args video-url))))
+   (format
+    "mkdir -p \"%1$s\" && cd \"%1$s\" && %2$s %3$s %4$s"
+    (temporary-file-directory)
+    (youtube-sub-extractor--find-exe)
+    args
+    (shell-quote-argument video-url))))
 
 (defun youtube-sub-extractor--available-langs (video-url)
   "Send a request for VIDEO-URL and get list of available languages."
