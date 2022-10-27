@@ -176,8 +176,16 @@ Each is a timestamp, duration and the corresponding sub."
       (insert (format "%s\n\n" (file-name-base subs-file)))
       (dolist (el subs-lst)
         (let* ((ts (substring (nth 0 el) (if mins-only? 3 0) 8))
+               (sub-text (nth 1 el))
                (pos (point))
-               (_ (insert (format "%s\n" (string-join (nth 1 el) " "))))
+               (_ (progn
+                    (insert (format "%s" (string-join sub-text " ")))
+                    (save-excursion
+                      (add-text-properties
+                       (progn (beginning-of-line) (point))
+                       (progn (end-of-line) (point))
+                       `(help-echo ,ts timestamp ,ts)))
+                    (insert "\n")))
                (ovrl (make-overlay (1+ pos) (point) nil t))
                (ovrl-txt (or ts "")))
           (overlay-put ovrl 'before-string
