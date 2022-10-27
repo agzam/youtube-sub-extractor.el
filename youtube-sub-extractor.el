@@ -30,6 +30,19 @@
   :prefix "youtube-sub-extractor-"
   :group 'applications)
 
+(defcustom youtube-sub-extractor-timestamps
+  'left-margin
+  "Method of displaying timestamps.
+left-margin or right-margin - it would display them as overlays.
+leftside-text - inserts timestamps next to subs (so they can be
+copied with timestamps)
+nil - timestamps will not be displayed at all."
+  :group 'youtube-sub-extractor
+  :type '(choice
+          (symbol 'left-margin)
+          (symbol 'right-margin)
+          (symbol 'left-side-text)))
+
 (defcustom youtube-sub-extractor-executable-path
   nil
   "Path to yt-dlp (preferred) or youtube-dl executable."
@@ -179,6 +192,8 @@ Each is a timestamp, duration and the corresponding sub."
                (sub-text (nth 1 el))
                (pos (point))
                (_ (progn
+                    (when (eq youtube-sub-extractor-timestamps 'left-side-text)
+                      (insert (format "%s\t" ts)))
                     (insert (format "%s" (string-join sub-text " ")))
                     (save-excursion
                       (add-text-properties
@@ -187,14 +202,22 @@ Each is a timestamp, duration and the corresponding sub."
                        `(help-echo ,ts timestamp ,ts)))
                     (insert "\n")))
                (ovrl (make-overlay (1+ pos) (point) nil t))
-               (ovrl-txt (or ts "")))
-          (overlay-put ovrl 'before-string
-           (propertize ovrl-txt
-                       'display `((margin left-margin) ,ovrl-txt)))))
+               (ovrl-txt (or ts ""))
+               (margin (if (eq youtube-sub-extractor-timestamps 'right-margin)
+                           'right-margin 'left-margin)))
+          (overlay-put
+           ovrl 'before-string
+           (propertize ovrl-txt 'display `((margin ,margin) ,ovrl-txt)))))
       (goto-char (point-min))
       (read-only-mode +1))
     (switch-to-buffer-other-window buf)
-    (set-window-margins nil 8)))
+    (unless (or (eq youtube-sub-extractor-timestamps 'left-side-text)
+                (null youtube-sub-extractor-timestamps))
+     (set-window-margins
+      nil
+      (when (eq youtube-sub-extractor-timestamps 'left-margin) 9)
+      (when (eq youtube-sub-extractor-timestamps 'right-margin) 9)))))
+
 
 (defun youtube-sub-extractor--send-request (video-url args)
   "Call cmd-line util with ARGS and VIDEO-URL."
