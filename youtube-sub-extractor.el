@@ -16,7 +16,7 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; Commentary:
-;
+;;
 ;; Extract video subtitles using https://github.com/yt-dlp and show them in a buffer.
 ;;
 ;; This package requires https://github.com/yt-dlp cmd line tool, installed and availible in $PATH
@@ -29,6 +29,19 @@
   "YouTube Subtitle Extractor."
   :prefix "youtube-sub-extractor-"
   :group 'applications)
+
+(defcustom youtube-sub-extractor-timestamps
+  'right-margin
+  "Method of displaying timestamps.
+left-margin or right-margin - it would display them as overlays.
+leftside-text - inserts timestamps next to subs (so they can be
+copied with timestamps)
+nil - timestamps will not be displayed at all."
+  :group 'youtube-sub-extractor
+  :type '(choice
+          (symbol 'left-margin)
+          (symbol 'right-margin)
+          (symbol 'left-side-text)))
 
 (defcustom youtube-sub-extractor-executable-path
   nil
@@ -60,6 +73,25 @@ ones."
   :group 'youtube-sub-extractor
   :type '(choice boolean string))
 
+(defvar youtube-sub-extractor-subtitles-mode-map (make-sparse-keymap)
+  "Keymap for minor mode variable `youtube-sub-extractor-subtitles-mode'.")
+
+(define-minor-mode youtube-sub-extractor-subtitles-mode
+  "youtube-sub-extractor-minor-mode
+\\{youtube-sub-extractor-subtitles-mode-map}"
+  :group 'youtube-sub-extractor
+  :lighter " yt-subs"
+  :init-value nil
+  :keymap youtube-sub-extractor-subtitles-mode-map)
+
+(define-key
+ youtube-sub-extractor-subtitles-mode-map (kbd "RET")
+ #'youtube-sub-extractor-copy-ts-link)
+
+(define-key
+ youtube-sub-extractor-subtitles-mode-map (kbd "C-c C-o")
+ #'youtube-sub-extractor-browse-ts-link)
+
 (defvar youtube-sub-extractor--ts-rx
   "[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}"
   "Regexp used to locate timestamps in subtitles file.")
@@ -69,7 +101,7 @@ ones."
   (when (and (stringp ts)
              (string-match-p youtube-sub-extractor--ts-rx ts))
     (pcase-let* ((`(,s ,m ,h) (parse-time-string ts))
-                 (ms (string-to-number (substring ts -3))))
+                 (ms (string-to-number (substring ts 9 12))))
       (+ (* 3600 h) (* 60 m) s (/ ms 1000.0)))))
 
 (defun youtube-sub-extractor--duration (long-ts)
@@ -164,29 +196,50 @@ Each is a timestamp, duration and the corresponding sub."
            ())))
     second-pass))
 
-(defun youtube-sub-extractor--create-subs-buffer (subs-file)
+(defun youtube-sub-extractor--create-subs-buffer (subs-file vid-url)
   "Read SUBS-FILE and insert the content in a buffer."
   (let* ((raw (with-temp-buffer
                 (insert-file-contents subs-file)
                 (buffer-string)))
          (subs-lst (youtube-sub-extractor--process-subs raw))
          (buf (generate-new-buffer (file-name-base subs-file)))
+         ;; if the vid shorter than hour, no need to show hours - timestamps would be s:ms
          (mins-only? (zerop (nth 2 (parse-time-string (cl-first (cl-first (last subs-lst))))))))
     (with-current-buffer buf
       (insert (format "%s\n\n" (file-name-base subs-file)))
       (dolist (el subs-lst)
-        (let* ((ts (substring (nth 0 el) (if mins-only? 3 0) 8))
+        (let* ((full-ts (nth 0 el))
+               (ts (substring full-ts (if mins-only? 3 0) 8))
+               (sub-text (nth 1 el))
                (pos (point))
-               (_ (insert (format "%s\n" (string-join (nth 1 el) " "))))
+               (_ (progn
+                    (when (eq youtube-sub-extractor-timestamps 'left-side-text)
+                      (insert (format "%s\t" ts)))
+                    (insert (format "%s" (string-join sub-text " ")))
+                    (save-excursion
+                      (add-text-properties
+                       (progn (beginning-of-line) (point))
+                       (progn (end-of-line) (point))
+                       `(help-echo ,ts timestamp ,full-ts)))
+                    (insert "\n")))
                (ovrl (make-overlay (1+ pos) (point) nil t))
-               (ovrl-txt (or ts "")))
-          (overlay-put ovrl 'before-string
-           (propertize ovrl-txt
-                       'display `((margin left-margin) ,ovrl-txt)))))
+               (ovrl-txt (or ts ""))
+               (margin (if (eq youtube-sub-extractor-timestamps 'right-margin)
+                           'right-margin 'left-margin)))
+          (overlay-put
+           ovrl 'before-string
+           (propertize ovrl-txt 'display `((margin ,margin) ,ovrl-txt)))))
       (goto-char (point-min))
+      (setq-local video-url vid-url)
+      (youtube-sub-extractor-subtitles-mode +1)
       (read-only-mode +1))
     (switch-to-buffer-other-window buf)
-    (set-window-margins nil 8)))
+    (unless (or (eq youtube-sub-extractor-timestamps 'left-side-text)
+                (null youtube-sub-extractor-timestamps))
+      (set-window-margins
+       nil
+       (when (eq youtube-sub-extractor-timestamps 'left-margin) 9)
+       (when (eq youtube-sub-extractor-timestamps 'right-margin) 9)))))
 
 (defun youtube-sub-extractor--send-request (video-url args)
   "Call cmd-line util with ARGS and VIDEO-URL."
@@ -201,22 +254,46 @@ Each is a timestamp, duration and the corresponding sub."
 
 (defun youtube-sub-extractor--available-langs (video-url)
   "Send a request for VIDEO-URL and get list of available languages."
-  (let* ((lan-lst (seq-remove #'null
-                   (seq-map (lambda (x)
-                              (when (string-match "^\\([A-z\\|-]+\\)\\(.*\\)vtt," x)
-                                (list (match-string 1 x)
-                                      (string-trim (match-string 2 x)))))
-                            (seq-drop
-                             (seq-drop-while
-                              (lambda (x)
-                                (not (string-match-p "\\[info\\] Available subtitles for.*:" x)))
-                              (split-string
-                               (youtube-sub-extractor--send-request
-                                video-url
-                                "--list-subs --no-simulate --skip-download --no-playlist")
-                               "\n"  :omit-nulls))
-                             2)))))
+  (let* ((lan-lst (seq-remove
+                   #'null
+                   (seq-map
+                    (lambda (x)
+                      (when (string-match "^\\([A-z\\|-]+\\)\\(.*\\)vtt," x)
+                        (list (match-string 1 x)
+                              (string-trim (match-string 2 x)))))
+                    (seq-drop
+                     (seq-drop-while
+                      (lambda (x)
+                        (not (string-match-p "\\[info\\] Available subtitles for.*:" x)))
+                      (split-string
+                       (youtube-sub-extractor--send-request
+                        video-url
+                        "--list-subs --no-simulate --skip-download --no-playlist")
+                       "\n"  :omit-nulls))
+                     2)))))
     lan-lst))
+
+(defun youtube-sub-extractor-copy-ts-link ()
+  (interactive)
+  (let ((ts (plist-get (text-properties-at (point)) 'timestamp)))
+    (when (and (boundp 'video-url) ts
+               (bound-and-true-p youtube-sub-extractor-subtitles-mode)
+               (string-match "\\([^?]+\\)\\(\\?\\|\\)\\(.*\\)" video-url))
+      (let* ((path (match-string 1 video-url))
+             (args (url-parse-query-string (match-string 3 video-url)))
+             (tp (floor (youtube-sub-extractor--seconds ts)))
+             (tpoint (when (numberp tp) (number-to-string tp)))
+             (t-item (alist-get "t" args nil nil #'string-equal))
+             (_ (if t-item (setf (car t-item) tpoint)
+                  (cl-pushnew (list "t" tpoint) args)))
+             (new-path (concat path "?" (url-build-query-string args))))
+        (message new-path)
+        (kill-new new-path)
+        new-path))))
+
+(defun youtube-sub-extractor-browse-ts-link ()
+  (interactive)
+  (browse-url (youtube-sub-extractor-copy-ts-link)))
 
 (defun youtube-sub-extractor-extract-subs (video-url)
   "For a given YouTube vid VIDEO-URL, extract subtitles and open them in a buffer."
@@ -239,10 +316,12 @@ Each is a timestamp, duration and the corresponding sub."
                        (if (equal 'auto selected)
                            "--write-auto-subs"
                          (format "--write-subs --sub-langs \"%s\"" selected)))))
-         (progress (seq-drop-while (lambda (x)
-                                     (not (string-match-p "\\[download\\] Destination.*$" x)))
-                                   (split-string res "\n" :omit-nulls "^ \\| $")))
-         (fname (when (seq-some (lambda (x) (string-match-p "\\[download\\] 100% .*" x))
+         (progress (seq-drop-while
+                    (lambda (x)
+                      (not (string-match-p "\\[download\\] Destination.*$" x)))
+                    (split-string res "\n" :omit-nulls "^ \\| $")))
+         (fname (when (seq-some
+                       (lambda (x) (string-match-p "\\[download\\] 100% .*" x))
                        progress)
                   (seq-some
                    (lambda (x)
@@ -253,7 +332,7 @@ Each is a timestamp, duration and the corresponding sub."
     (unless fname
       (error "Failed to extract subtitles, output log:\n\n%s" res))
 
-    (youtube-sub-extractor--create-subs-buffer fpath)
+    (youtube-sub-extractor--create-subs-buffer fpath video-url)
     (delete-file fpath)))
 
 (provide 'youtube-sub-extractor)
