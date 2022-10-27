@@ -1,9 +1,9 @@
 #+title: youtube-sub-extractor.el
 
 ** Description
-Extracts video subtitles using [[https://github.com/yt-dlp][yt-dlp]] (recommended) or ~youtube-dl~ and shows them in a buffer.
+Extracts video subtitles using [[https://github.com/yt-dlp][yt-dlp]] (recommended) or ~youtube-dl~ (poorly supported) and shows them in a buffer.
 
-I was having a conversation one day and I couldn't recall the name of a term, something I learned from a YouTube video. That bothered me. After the chat, I went back to YouTube, found the video, and started searching through it. I increased the playback speed and went back and forth but still couldn't find it. After a few minutes of that struggle, I thought: "what the heck am I doing?". Then I wrote a tiny elisp function to extract subtitles. While reading through the subs I realized how much good stuff went past my ears (while watching the video).
+I was having a conversation one day and I couldn't recall the name of a term, something I learned from a YouTube video. That bothered me. After the chat, I went back to YouTube, found the video, and started searching through it. I increased the playback speed and went back and forth but still couldn't find it. After a few minutes of that struggle, I thought: "what the heck am I doing?". Then I wrote a tiny elisp function to extract subtitles. While reading through the subs I realized how much good stuff went past my ears (while watching the video), so I made it into a package.
 
 ** Prerequisites
 It works by calling ~yt-dlp~ (preferred), or  ~youtube-dl~ command line utility. Make sure at least one of them is installed and available at ~$PATH~.
@@ -15,18 +15,70 @@ Without the option of extracting auto-generated subtitles, this package would be
 
 *Update*: Initially, it was written with the support of ~youtube-dl~, but lately, I've been using it exclusively with ~yt-dlp~. There are minor differences between these two tools, and the proper work with ~youtube-dl~ at this point is not guaranteed.
 
-** Installation
-The package is not published on MELPA (just yet). You can install it using your favorite Emacs package management tool.
+** Installation & Customization
+The package is not published on MELPA (just yet, follow [[https://github.com/melpa/melpa/pull/8234][this PR]]). You can install it using your favorite Emacs package management tool.
 
 *** for Doom:
-
 packages.el
 #+begin_src emacs-lisp
-(package! youtube-sub-extractor :recipe (:host github :repo "agzam/youtube-sub-extractor.el" :files ("*.el")))
+(package! youtube-sub-extractor
+  :recipe (:host github
+           :repo "agzam/youtube-sub-extractor.el"
+           :files ("*.el")))
 #+end_src
 
 config.el
 #+begin_src emacs-lisp
 (use-package! youtube-sub-extractor
-  :commands (youtube-sub-extractor-extract-subs))
+  :commands (youtube-sub-extractor-extract-subs)
+  :config
+  (map! :map youtube-sub-extractor-subtitles-mode-map
+    :desc "copy timestamp URL" :n "RET" #'youtube-sub-extractor-copy-ts-link
+    :desc "browse at timestamp" :n "C-c C-o" #'youtube-sub-extractor-browse-ts-link))
+
+  (setq youtube-sub-extractor-timestamps 'left-margin)
 #+end_src
+
+*** Customization
+The package is simple and the main command is ~youtube-sub-extractor-extract-subs~
+You can bind it to a key if you like:
+
+#+begin_src elisp
+(global-set-key "C-c C-x y" #'youtube-sub-extractor-extract-subs)
+#+end_src
+
+Doom users probably would want to use the leader key, e.g.,
+
+#+begin_src elisp
+(map! :leader :desc "YouTube subs" "oy" #''youtube-sub-extractor-extract-subs)
+#+end_src
+
+Other customizable vars are:
+
+~youtube-sub-extractor-timestamps~ (default ~right-margin~) - sets the way how timestamps should be displayed,
+either as overlays on the ~right-margin~ or ~left-margin~, or they need to be printed, for example, if you want to copy the text and include the timestamps, in that case, set the value to ~left-side-text~.
+
+~youtube-sub-extractor-executable-path~ (default ~nil~). The package tries to find the required executable at =$PATH=, but you may have to set the full path to it explicitly.
+
+~youtube-sub-extractor-min-chunk-size~ (default ~5~ seconds). YouTube very often chunks up the subs into pieces too small (a couple of seconds), especially for auto-generated subs. You may want to set different size.
+
+~youtube-sub-extractor-language-choice~ (default ~t~). Just leave it as is and it will always ask for when multiple language choices are available. If you're only interested in a specific language, set the var. See the docstring for details.
+
+In the subtitles buffer (when subs get successfully extracted) it enables a minor mode, so you can bind keys to specific commands. By default, they are set to ~RET~ (to copy the link to the video at a specific timestamp) and ~C-c C-o~ (to browse the video at the timestamp), you can change those, e.g.,
+
+#+begin_src elisp
+(define-key
+ youtube-sub-extractor-subtitles-mode-map (kbd "C-RET")
+ #'youtube-sub-extractor-copy-ts-link)
+
+(define-key
+ youtube-sub-extractor-subtitles-mode-map (kbd "C-c b")
+ #'youtube-sub-extractor-browse-ts-link)
+#+end_src
+
+ Evil (non-Doom) users can do it like so, Doom users see previous section:
+
+ #+begin_src elisp
+(evil-define-minor-mode-key 'normal 'youtube-sub-extractor-subtitles-mode
+  (kbd "C-RET") #'youtube-sub-extractor-copy-ts-link)
+ #+end_src
