@@ -12,8 +12,8 @@
 (defun file-to-string (filename)
   "File to string function"
   ;; adjust filename for `buttercup-run-at-point', for testing locally
-  (when (equal '("tests") (last (split-string default-directory "/" :omit-nulls)))
-    (setq filename (replace-regexp-in-string "tests/" "" filename)))
+  (when (equal '("test") (last (split-string default-directory "/" :omit-nulls)))
+    (setq filename (replace-regexp-in-string "test/" "" filename)))
   (with-temp-buffer
     (insert-file-contents filename)
     (buffer-string)))
@@ -21,7 +21,7 @@
 (describe "parsing sample.en.vtt, normally"
   :var (eng-sample-str parsed)
   (before-all
-    (setq eng-sample-str (file-to-string "tests/sample.en.vtt"))
+    (setq eng-sample-str (file-to-string "test/sample.en.vtt"))
     (setq parsed (youtube-sub-extractor--process-subs eng-sample-str)))
 
   (it "should parse sample.en.vtt"
@@ -51,7 +51,7 @@
 (describe "parsing sample.es.vtt, normally"
   :var (es-sample-str parsed)
   (before-all
-    (setq es-sample-str (file-to-string "tests/sample.es.vtt"))
+    (setq es-sample-str (file-to-string "test/sample.es.vtt"))
     (setq parsed (youtube-sub-extractor--process-subs es-sample-str)))
 
   (it "should parse sample.en.vtt"
@@ -81,7 +81,7 @@
 (describe "parsing sample-autogen.es.vtt, normally"
   :var (en-autogen-sample-str parsed)
   (before-all
-    (setq en-autogen-sample-str (file-to-string "tests/sample-autogen.en.vtt"))
+    (setq en-autogen-sample-str (file-to-string "test/sample-autogen.en.vtt"))
     (setq parsed (youtube-sub-extractor--process-subs en-autogen-sample-str)))
 
   (it "should parse sample-autogen.es.vtt"
@@ -115,7 +115,7 @@
             (expect args :to-equal "--list-subs --no-simulate --skip-download --no-playlist")
             (expect video-url :to-match "pelicula_prueba")
             ;; read fixture file instead of sending request
-            (file-to-string "tests/list-subs-output.txt")))
+            (file-to-string "test/list-subs-output.txt")))
 
     (spy-on 'youtube-sub-extractor--send-request))
 
@@ -139,7 +139,7 @@
             (expect args :to-equal "--list-subs --no-simulate --skip-download --no-playlist")
             (expect video-url :to-match "pelicula_prueba")
             ;; read fixture file instead of sending request
-            (file-to-string "tests/list-subs-no-available-output.txt")))
+            (file-to-string "test/list-subs-no-available-output.txt")))
 
     (spy-on 'youtube-sub-extractor--send-request))
 
