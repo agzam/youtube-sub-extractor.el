@@ -36,3 +36,32 @@ jobs:
       - name: check
         run: |-
          emacs --batch --funcall package-initialize --directory . --funcall buttercup-run-discover
+  MELPA-Checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install Emacs
+        run: |
+          sudo apt-get -y install emacs || (sudo apt-get update && sudo apt-get -y install emacs)
+          emacs --version
+
+      - name: Ensure pip exists
+        run: |
+          command -v pip || sudo apt-get -y install python3-pip
+
+      - name: Install Melpazoid
+        run: |
+          ( cd ~/melpazoid && git checkout -- . && git pull --rebase ) || git clone https://github.com/riscy/melpazoid.git ~/melpazoid
+          pip install ~/melpazoid 2>/dev/null
+
+      - name: Check MELPA recipe with melpazoid
+        env:
+          RECIPE: (youtube-sub-extractor :repo "agzam/youtube-sub-extractor.el" :fetcher github)
+          EXIST_OK: false
+        run: echo $GITHUB_REF && env LOCAL_REPO="$GITHUB_WORKSPACE" make -C ~/melpazoid
+      - name: Install Eldev
+        run: curl -fsSL "https://raw.github.com/doublep/eldev/master/webinstall/github-eldev" | sh
+      - name: Eldev lint
+        run: |
+          eldev -p -dtT --color=always lint
