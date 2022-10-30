@@ -33,8 +33,8 @@
 (defcustom youtube-sub-extractor-timestamps
   'right-margin
   "Method of displaying timestamps.
-`left-margin' or right-margin - it would display them as overlays.
-leftside-text - inserts timestamps next to subs (so they can be
+`left-margin' or `right-margin' - it would display them as overlays.
+`leftside-text' - inserts timestamps next to subs (so they can be
 copied with timestamps)
 nil - timestamps will not be displayed at all."
   :group 'youtube-sub-extractor
