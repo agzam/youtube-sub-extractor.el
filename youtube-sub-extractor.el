@@ -33,7 +33,7 @@
 (defcustom youtube-sub-extractor-timestamps
   'right-margin
   "Method of displaying timestamps.
-left-margin or right-margin - it would display them as overlays.
+`left-margin' or right-margin - it would display them as overlays.
 leftside-text - inserts timestamps next to subs (so they can be
 copied with timestamps)
 nil - timestamps will not be displayed at all."
@@ -77,7 +77,7 @@ ones."
   "Keymap for minor mode variable `youtube-sub-extractor-subtitles-mode'.")
 
 (define-minor-mode youtube-sub-extractor-subtitles-mode
-  "youtube-sub-extractor-minor-mode
+  "Minor mode for youtube-sub-extractor.
 \\{youtube-sub-extractor-subtitles-mode-map}"
   :group 'youtube-sub-extractor
   :lighter " yt-subs"
@@ -197,7 +197,8 @@ Each is a timestamp, duration and the corresponding sub."
     second-pass))
 
 (defun youtube-sub-extractor--create-subs-buffer (subs-file vid-url)
-  "Read SUBS-FILE and insert the content in a buffer."
+  "Read SUBS-FILE and insert the content in a buffer.
+VID-URL gets used later for browsing video at specific timestamp."
   (let* ((raw (with-temp-buffer
                 (insert-file-contents subs-file)
                 (buffer-string)))
@@ -274,6 +275,8 @@ Each is a timestamp, duration and the corresponding sub."
     lan-lst))
 
 (defun youtube-sub-extractor-copy-ts-link ()
+  "Construct a video url at specific timestamp.
+Works only in youtube-sub-extractor-mode buffer."
   (interactive)
   (let ((ts (plist-get (text-properties-at (point)) 'timestamp)))
     (when (and (boundp 'video-url) ts
@@ -292,6 +295,8 @@ Each is a timestamp, duration and the corresponding sub."
         new-path))))
 
 (defun youtube-sub-extractor-browse-ts-link ()
+  "Browse video url at specific timestamp.
+Works only in youtube-sub-extractor-mode buffer."
   (interactive)
   (browse-url (youtube-sub-extractor-copy-ts-link)))
 
