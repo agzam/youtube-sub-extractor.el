@@ -33,7 +33,7 @@
 (defcustom youtube-sub-extractor-timestamps
   'right-margin
   "Method of displaying timestamps.
-left-margin or right-margin - it would display them as overlays.
+`left-margin' or right-margin - it would display them as overlays.
 leftside-text - inserts timestamps next to subs (so they can be
 copied with timestamps)
 nil - timestamps will not be displayed at all."
@@ -58,7 +58,7 @@ nil - timestamps will not be displayed at all."
 (defcustom youtube-sub-extractor-language-choice
   t
   "Whether to prompt for the language when multiple are available.
-If nil or t - will ask. If set to specific language string, e.g.,
+If nil or t - will ask.  If set to specific language string, e.g.,
 
 \"en\" - for English,
 \"es\" - Spanish,
@@ -77,7 +77,7 @@ ones."
   "Keymap for minor mode variable `youtube-sub-extractor-subtitles-mode'.")
 
 (define-minor-mode youtube-sub-extractor-subtitles-mode
-  "youtube-sub-extractor-minor-mode
+  "Minor mode for youtube-sub-extractor.
 \\{youtube-sub-extractor-subtitles-mode-map}"
   :group 'youtube-sub-extractor
   :lighter " yt-subs"
@@ -124,7 +124,7 @@ i.e., string containing '00:00:07.200 --> 00:00:09.830'"
     (format "%s --> %s" start end)))
 
 (defun youtube-sub-extractor--find-exe ()
-  "Attempts to find the command-line util to extract subs."
+  "Attempts to find the command line util to extract subs."
   (if-let ((exe (or (executable-find (or youtube-sub-extractor-executable-path "yt-dlp"))
                     (executable-find "youtube-dl"))))
       exe
@@ -135,7 +135,7 @@ i.e., string containing '00:00:07.200 --> 00:00:09.830'"
 Each is a timestamp, duration and the corresponding sub."
   (let* ((ts-line-rx (format "^%1$s --> %1$s\\( .*$\\|$\\)" youtube-sub-extractor--ts-rx))
          ;; let's remove all cue and decoration tags
-         (tags-n-karaoke-rx "<.>\\|<\\/.>\\|\\(<[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}>\\)")
+         (tags-n-karaoke-rx "<.>\\|</.>\\|\\(<[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}>\\)")
          ;; first we simply parse things and gather into a list of tuples
          ;; with timestamp and list of subtitles
          (first-pass
@@ -197,7 +197,8 @@ Each is a timestamp, duration and the corresponding sub."
     second-pass))
 
 (defun youtube-sub-extractor--create-subs-buffer (subs-file vid-url)
-  "Read SUBS-FILE and insert the content in a buffer."
+  "Read SUBS-FILE and insert the content in a buffer.
+VID-URL gets used later for browsing video at specific timestamp."
   (let* ((raw (with-temp-buffer
                 (insert-file-contents subs-file)
                 (buffer-string)))
@@ -258,7 +259,7 @@ Each is a timestamp, duration and the corresponding sub."
                    #'null
                    (seq-map
                     (lambda (x)
-                      (when (string-match "^\\([A-z\\|-]+\\)\\(.*\\)vtt," x)
+                      (when (string-match "^\\([A-z|-]+\\)\\(.*\\)vtt," x)
                         (list (match-string 1 x)
                               (string-trim (match-string 2 x)))))
                     (seq-drop
@@ -274,6 +275,8 @@ Each is a timestamp, duration and the corresponding sub."
     lan-lst))
 
 (defun youtube-sub-extractor-copy-ts-link ()
+  "Construct a video url at specific timestamp.
+Works only in youtube-sub-extractor-mode buffer."
   (interactive)
   (let ((ts (plist-get (text-properties-at (point)) 'timestamp)))
     (when (and (boundp 'video-url) ts
@@ -292,6 +295,8 @@ Each is a timestamp, duration and the corresponding sub."
         new-path))))
 
 (defun youtube-sub-extractor-browse-ts-link ()
+  "Browse video url at specific timestamp.
+Works only in youtube-sub-extractor-mode buffer."
   (interactive)
   (browse-url (youtube-sub-extractor-copy-ts-link)))
 
