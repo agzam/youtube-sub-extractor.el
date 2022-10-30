@@ -73,7 +73,10 @@ ones."
   :group 'youtube-sub-extractor
   :type '(choice boolean string))
 
-(defvar youtube-sub-extractor-subtitles-mode-map (make-sparse-keymap)
+(defvar youtube-sub-extractor-subtitles-mode-map
+  (let ((km (make-sparse-keymap)))
+    (define-key km (kbd "RET") #'youtube-sub-extractor-copy-ts-link)
+    (define-key km (kbd "C-c C-o") #'youtube-sub-extractor-browse-ts-link))
   "Keymap for minor mode variable `youtube-sub-extractor-subtitles-mode'.")
 
 (define-minor-mode youtube-sub-extractor-subtitles-mode
@@ -83,14 +86,6 @@ ones."
   :lighter " yt-subs"
   :init-value nil
   :keymap youtube-sub-extractor-subtitles-mode-map)
-
-(define-key
- youtube-sub-extractor-subtitles-mode-map (kbd "RET")
- #'youtube-sub-extractor-copy-ts-link)
-
-(define-key
- youtube-sub-extractor-subtitles-mode-map (kbd "C-c C-o")
- #'youtube-sub-extractor-browse-ts-link)
 
 (defvar youtube-sub-extractor--ts-rx
   "[0-9]\\{2\\}:[0-9]\\{2\\}:[0-9]\\{2\\}.[0-9]\\{3\\}"
@@ -219,8 +214,8 @@ VID-URL gets used later for browsing video at specific timestamp."
                     (insert (format "%s" (string-join sub-text " ")))
                     (save-excursion
                       (add-text-properties
-                       (progn (beginning-of-line) (point))
-                       (progn (end-of-line) (point))
+                       (line-beginning-position)
+                       (line-end-position)
                        `(help-echo ,ts timestamp ,full-ts)))
                     (insert "\n")))
                (ovrl (make-overlay (1+ pos) (point) nil t))
