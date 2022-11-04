@@ -74,9 +74,10 @@ ones."
   :type '(choice boolean string))
 
 (defvar youtube-sub-extractor-subtitles-mode-map
-  (let ((km (make-sparse-keymap)))
-    (define-key km (kbd "RET") #'youtube-sub-extractor-copy-ts-link)
-    (define-key km (kbd "C-c C-o") #'youtube-sub-extractor-browse-ts-link))
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "RET") #'youtube-sub-extractor-copy-ts-link)
+    (define-key map (kbd "C-c C-o") #'youtube-sub-extractor-browse-ts-link)
+    map)
   "Keymap for minor mode variable `youtube-sub-extractor-subtitles-mode'.")
 
 (define-minor-mode youtube-sub-extractor-subtitles-mode
