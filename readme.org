@@ -16,15 +16,15 @@ Without the option of extracting auto-generated subtitles, this package would be
 *Update*: Initially, it was written with the support of ~youtube-dl~, but lately, I've been using it exclusively with ~yt-dlp~. There are minor differences between these two tools, and the proper work with ~youtube-dl~ at this point is not guaranteed.
 
 ** Installation & Customization
-The package is not published on MELPA (just yet, follow [[https://github.com/melpa/melpa/pull/8234][this PR]]). You can install it using your favorite Emacs package management tool.
+*** Install [[https://github.com/yt-dlp/yt-dlp#installation][yt-dlp]], /unless already installed/
 
-*** for Doom:
+*** Package is available on MELPA
+You can install it using your favorite Emacs package management tool.
+
+*** Doom config example:
 packages.el
 #+begin_src emacs-lisp
-(package! youtube-sub-extractor
-  :recipe (:host github
-           :repo "agzam/youtube-sub-extractor.el"
-           :files ("*.el")))
+(package! youtube-sub-extractor)
 #+end_src
 
 config.el
