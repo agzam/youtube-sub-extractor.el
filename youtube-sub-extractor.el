@@ -24,6 +24,7 @@
 ;;; Code:
 
 (require 'cl-lib)
+(require 'subr-x)
 
 (defgroup youtube-sub-extractor nil
   "YouTube Subtitle Extractor."
@@ -152,7 +153,11 @@ Each is a timestamp, duration and the corresponding sub."
                   (list
                    (append
                     prev-el
-                    (list (replace-regexp-in-string tags-n-karaoke-rx "" nxt))))))
+                    (list
+                     (thread-last
+                       nxt
+                       (replace-regexp-in-string tags-n-karaoke-rx "")
+                       (replace-regexp-in-string "&nbsp;" "")))))))
 
                 (t acc))))
            (split-string subs-string "\n" :omit-nulls " *")
